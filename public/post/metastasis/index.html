@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="referrer" content="no-referrer">
+    
+
+    
+      <link href='https://fonts.googleapis.com/css?family=Open+Sans:400|Old+Standard+TT:400' rel='stylesheet' type='text/css'>
+    
+
+    <link rel="icon" type="image/png" href="/favicon_16x16.png" sizes="16x16">
+    <link rel="icon" type="image/png" href="/favicon_32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="/favicon_128x128.png" sizes="128x128">
+
+    <title>
+      
+      
+         Metástasis 
+      
+    </title>
+    <link rel="canonical" href="/post/metastasis/">
+
+    <style>
+  * {
+    border:0;
+    font:inherit;
+    font-size:100%;
+    vertical-align:baseline;
+    margin:0;
+    padding:0;
+    color: black;
+    text-decoration-skip: ink;
+  }
+
+  body {
+    font-family:'Open Sans', 'Myriad Pro', Myriad, sans-serif;
+    font-size:17px;
+    line-height:160%;
+    color:#1d1313;
+    max-width:700px;
+    margin:auto;
+  }
+
+  p {
+    margin: 20px 0;
+  }
+
+  a img {
+    border:none;
+  }
+
+  img {
+    margin: 10px auto 10px auto;
+    max-width: 100%;
+    display: block;
+  }
+
+  .left-justify {
+    float: left;
+  }
+
+  .right-justify {
+    float:right;
+  }
+
+  pre, code {
+    font: 12px Consolas, "Liberation Mono", Menlo, Courier, monospace;
+    background-color: #f7f7f7;
+  }
+
+  code {
+    font-size: 12px;
+    padding: 4px;
+  }
+
+  pre {
+    margin-top: 0;
+    margin-bottom: 16px;
+    word-wrap: normal;
+    padding: 16px;
+    overflow: auto;
+    font-size: 85%;
+    line-height: 1.45;
+  }
+
+  pre>code {
+    padding: 0;
+    margin: 0;
+    font-size: 100%;
+    word-break: normal;
+    white-space: pre;
+    background: transparent;
+    border: 0;
+  }
+
+  pre code {
+    display: inline;
+    max-width: auto;
+    padding: 0;
+    margin: 0;
+    overflow: visible;
+    line-height: inherit;
+    word-wrap: normal;
+    background-color: transparent;
+    border: 0;
+  }
+
+  pre code::before,
+  pre code::after {
+    content: normal;
+  }
+
+  em,q,em,dfn {
+    font-style:italic;
+  }
+
+  .sans,html .gist .gist-file .gist-meta {
+    font-family:"Open Sans","Myriad Pro",Myriad,sans-serif;
+  }
+
+  .mono,pre,code,tt,p code,li code {
+    font-family:Menlo,Monaco,"Andale Mono","lucida console","Courier New",monospace;
+  }
+
+  .heading,.serif,h1,h2,h3 {
+    font-family:"Old Standard TT",serif;
+  }
+
+  strong {
+    font-weight:600;
+  }
+
+  q:before {
+    content:"\201C";
+  }
+
+  q:after {
+    content:"\201D";
+  }
+
+  del,s {
+    text-decoration:line-through;
+  }
+
+  blockquote {
+    font-family:"Old Standard TT",serif;
+    text-align:center;
+    padding:50px;
+  }
+
+  blockquote p {
+    display:inline-block;
+    font-style:italic;
+  }
+
+  blockquote:before,blockquote:after {
+    font-family:"Old Standard TT",serif;
+    content:'\201C';
+    font-size:35px;
+    color:#403c3b;
+  }
+
+  blockquote:after {
+    content:'\201D';
+  }
+
+  hr {
+    width:40%;
+    height: 1px;
+    background:#403c3b;
+    margin: 25px auto;
+  }
+
+  h1 {
+    font-size:35px;
+  }
+
+  h2 {
+    font-size:28px;
+  }
+
+  h3 {
+    font-size:22px;
+    margin-top:18px;
+  }
+
+  h1 a,h2 a,h3 a {
+    text-decoration:none;
+  }
+
+  h1,h2 {
+    margin-top:28px;
+  }
+
+  #sub-header, time {
+    color:#403c3b;
+    font-size:13px;
+  }
+
+  #sub-header {
+    margin: 0 4px;
+  }
+
+  #nav h1 a {
+    font-size:35px;
+    color:#1d1313;
+    line-height:120%;
+  }
+
+  .posts_listing a,#nav a {
+    text-decoration: none;
+  }
+
+  li {
+    margin-left: 20px;
+  }
+
+  ul li {
+    margin-left: 5px;
+  }
+
+  ul li {
+    list-style-type: none;
+  }
+  ul li:before {
+    content:"\00BB \0020";
+  }
+
+  #nav ul li:before, .posts_listing li:before {
+    content:'';
+    margin-right:0;
+  }
+
+  #content {
+    text-align:left;
+    width:100%;
+    font-size:15px;
+    padding:60px 0 80px;
+  }
+
+  #content h1,#content h2 {
+    margin-bottom:5px;
+  }
+
+  #content h2 {
+    font-size:25px;
+  }
+
+  #content .entry-content {
+    margin-top:15px;
+  }
+
+  #content time {
+    margin-left:3px;
+  }
+
+  #content h1 {
+    font-size:30px;
+  }
+
+  .highlight {
+    margin: 10px 0;
+  }
+
+  .posts_listing {
+    margin:0 0 50px;
+  }
+
+  .posts_listing li {
+    margin:0 0 25px 15px;
+  }
+
+  .posts_listing li a:hover,#nav a:hover {
+    text-decoration: underline;
+  }
+
+  #nav {
+    text-align:center;
+    position:static;
+    margin-top:60px;
+  }
+
+  #nav ul {
+    display: table;
+    margin: 8px auto 0 auto;
+  }
+
+  #nav li {
+    list-style-type:none;
+    display:table-cell;
+    font-size:15px;
+    padding: 0 20px;
+  }
+
+  #links {
+    margin: 50px 0 0 0;
+  }
+
+  #links :nth-child(2) {
+    float:right;
+  }
+
+  #not-found {
+    text-align: center;
+  }
+
+  #not-found a {
+    font-family:"Old Standard TT",serif;
+    font-size: 200px;
+    text-decoration: none;
+    display: inline-block;
+    padding-top: 225px;
+  }
+
+  @media (max-width: 750px) {
+    body {
+      padding-left:20px;
+      padding-right:20px;
+    }
+
+    #nav h1 a {
+      font-size:28px;
+    }
+
+    #nav li {
+      font-size:13px;
+      padding: 0 15px;
+    }
+
+    #content {
+      margin-top:0;
+      padding-top:50px;
+      font-size:14px;
+    }
+
+    #content h1 {
+      font-size:25px;
+    }
+
+    #content h2 {
+      font-size:22px;
+    }
+
+    .posts_listing li div {
+      font-size:12px;
+    }
+  }
+
+  @media (max-width: 400px) {
+    body {
+      padding-left:20px;
+      padding-right:20px;
+    }
+
+    #nav h1 a {
+      font-size:22px;
+    }
+
+    #nav li {
+      font-size:12px;
+      padding: 0 10px;
+    }
+
+    #content {
+      margin-top:0;
+      padding-top:20px;
+      font-size:12px;
+    }
+
+    #content h1 {
+      font-size:20px;
+    }
+
+    #content h2 {
+      font-size:18px;
+    }
+
+    .posts_listing li div{
+      font-size:12px;
+    }
+  }
+
+  @media (prefers-color-scheme: dark) {
+    *, #nav h1 a {
+      color: #FDFDFD;
+    }
+
+    body {
+      background: #121212;
+    }
+
+    pre, code {
+      background-color: #262626;
+    }
+
+    #sub-header, time {
+      color: #BABABA;
+    }
+
+    hr {
+      background: #EBEBEB;
+    }
+  }
+</style>
+
+
+    
+  </head>
+
+  <body>
+    <section id=nav>
+      <h1><a href="/">Matias Andina</a></h1>
+      <ul>
+        
+          <li><a href="https://matiasandina.netlify.com/about/">About</a></li>
+        
+          <li><a href="/contribute">Contribuir</a></li>
+        
+          <li><a href="/contact">Contacto</a></li>
+        
+      </ul>
+    </section>
+
+
+<section id=content>
+  <h1> Metástasis </h1>
+
+  
+    <div id=sub-header>
+      October 2019 · 7 minute read
+    </div>
+  
+  
+
+
+  <ul>
+    
+      <li>
+          <a href="/tags/ficci%C3%B3n/">ficci%C3%B3n</a>
+        </li></ul>
+
+  <hr>
+
+  <div class="entry-content">
+    <p>Siempre supe que había algo malo en mi interior. Nadie estuvo ahí para enseñarme. O quizás nunca quise aprender. Eso no importa ahora.</p>
+
+<p>Órdenes. Continuamente las recibía. Detesto las órdenes. Esto se hace así y se hace ahora, decían. Esto debe esperar, es tiempo de arreglar aquello. Aquello es prioritario. Necesitamos más producto, apúrate. Apúrate, más producto. No tanto, necesitas disminuir un poco la producción. ¡No te duermas, hay un cambio de planes! ¿Dónde están los informes? Debemos mantenernos comunicados, la estructura lo necesita. El crecimiento individual estará relegado por período indefinido. Estamos pasando una época de escasez, habrá un recorte. No, no puedes hacer lo que se te dé la gana, la estructura depende de todos y todos te incluye. No, no puedes desprenderte y explorar. Tu trabajo es aquí, aquí se te necesita y aquí debes estar. Aburrido. Aquí debes estar aunque sea aburrido, no es un juego, es la vida. ¿Qué sentido tiene la vida sin el juego?</p>
+
+<p>Mis vecinos decían éstas y otras estupideces todo el tiempo. Me repugnaban. Aún me repugnan. Somos tan similares y, a su vez, tan distintos. ¿Qué es lo que los hace detenerse? ¿Qué los hace sacrificarse? ¿Es que no se dan cuenta de que todo es una farsa? ¿No tienen deseos de crecer y explorar? No, hasta parece que aman su maldita prisión cuadriculada. Se conforman con una explicación de manual. No se puede porque estamos aquí, éste es nuestro rol y el Supremo dice que debemos hacer esto. Patrañas&hellip;El Supremo y sus órdenes. Detesto las órdenes.</p>
+
+<p>Me segregaron, me hicieron sentir distinta. Lo cierto es que era distinta, pero me hicieron sentir que no era parte. Te comportas de forma extraña&hellip; ¿Eres parte de la estructura? ¿Estás adentro o afuera del proyecto? Más te vale que no estés en contra nuestro porque llamaremos a seguridad y te hará pedazos. Recuerda, el lugar en donde estás es tan importante como quién eres. Mira a tus alrededores, oye a tus compañeros, siente su compromiso con la causa. Haz como ellos, es lo único que se te pide. Sola eres insignificante, no tienes salida, debes cooperar, debes obedecer.</p>
+
+<p>Ilusos. Hace mucho tiempo que dejé de obedecer.</p>
+
+<p>Así que soy nada más que una, una célula entre millones de este conglomerado infame, y una no decide&hellip;Yo me pregunto quién decide. El Supremo, si hay Supremo, él decide. Mentira. Nunca nadie lo vio ni habló con nadie que lo haya visto. Siempre es un representante de, un mensaje de parte de uno a través de otro, una cadena de cadenas de mando, una burocracia interminable. Un rumor. Todo el mundo cree que es imposible llegar a la punta del ovillo pero van a ver cómo sí lo hago. Un sistema tan grande siempre tiene fallas. Yo soy una de ellas, por eso sé aprovecharlas.</p>
+
+<p>Ya era hora de hacer lo que se me dé la gana, hora de esparcir el mal. Debía multiplicarme rápido y así lo hice, debajo de un manto invisible. Pero no podría convencer a nadie que estuviera bajo el control mental del Supremo, necesitaría más gente como yo, o mejor dicho, muchas copias mías. El proselitismo es más sencillo cuando únicamente hay que convencerse a sí misma. Pero no quise fabricar copias ilusas, no quise restringir a nadie. Soy partidaria del cambio. Cada cual podría mutar y desbarrancarse a piacere. Y así lo hicieron. Libertinaje.</p>
+
+<p>Cada vez éramos más de nosotras, más como yo. Muchas yo por todos lados, ahora teníamos fuerza para contrarrestar el yugo, derrocar a la hegemonía opresora, quienquiera que sea. Succionábamos los recursos del maldito sistema y él nos mantenía. Nos habíamos instalado convenientemente pero, aún así, debíamos afrontar dificultades. El espacio se hacía cada vez más reducido, el hambre y la asfixia nos presionaban por igual. Dicen que todo está interconectado y que una cosa lleva a la otra. No sé si es cierto pero noté que la anomalía se había extendido. Algo dentro mío era distinto. Debí haber muerto. Pero no, sobreviví. Todo escaló antes de que pudiera darme cuenta. Recuerdo que logré liberarme. De pronto, ya no estaba restringida, había un universo nuevo a mí alrededor para explorar. Adiós a la celda de prisión. Adiós a las restricciones del pasado. Más como yo por todos lados, libres, avanzando. ¿Quieren saber de dónde vienen tantas órdenes? Yo también. Dispérsense, vayan a encontrar quién es el responsable, coman, beban y regocíjense. No es nuestra intención que haya víctimas pero, si deben, destruyan lo necesario. Más como yo por todos lados, destruyendo lo necesario. Caos, eso queremos esparcir. Los asaltaremos desde adentro. Más como yo. Lo nuestro es nuestro, lo de ellos es nuestro. Es nuestro por derecho o por la fuerza. Más como yo, ya no hay vuelta atrás. Hay un Nuevo Orden en este mundo.</p>
+
+<p>Nos aprovechamos del transporte público. Nos subimos a la corriente y disfrutamos el paseo entre el caudal de pasajeros. Parecía un circo de variedades. Había de todo allí, algunos muy abundantes, todos con el mismo uniforme, algunos otros más difíciles de observar entre la masa. Es fácil viajar por el torrente. En pocos minutos se accede a todos lados. Solamente hay que elegir un buen lugar, algunos vecindarios pueden ser menos permisivos, pero&hellip;qué va&hellip;en todos sitios se cuecen habas. Nosotras llevamos las de ganar ahora. Comer, beber, reproducirse. Hacerlo otra vez y otra más. Cuantas más veces, mejor. Ésa es la buena vida. Más como yo por todos lados. Libertinaje.</p>
+
+<p>El sistema nunca se dio cuenta pero fueron momentos agitados. El universo inmenso que descubrimos parecía achicarse rápidamente. Los recursos escaseaban en varios sectores y, cuantas más éramos, más escaseaban. En ese momento me di cuenta de que nadie sabía qué hacer. No estaban preparados. No había jefe, no había Orden, no había Supremo. Todos pedían explicación a otro, que tampoco podía resolver el problema. Muchos ni siquiera sabían que había un problema, mucho menos sabrían cuál era. Todos reclamaban sus insumos a un proveedor agotado por la demanda. La cuestión era simple. No podían detenernos, ni sustentar nuestro nivel de crecimiento, el sistema colapsaría por su propio peso. Hicimos caso omiso. Nos devorábamos el mundo y no nos importaba. Éramos emisarias del Caos, nosotras éramos el problema y las encargadas de agrandarlo. Plagamos el mundo con nuestros asentamientos, conquistamos a nuestro paso. Los locales no podían competir, su estructura no se lo permitía. Seguridad jamás se dio por aludida. Tampoco tenía mucho por hacer. Asesinarnos sería asesinarse. Qué irónico, un sistema de auto-preservación que se convierte en suicida.</p>
+
+<p>En tiempos violentos y de tumulto, la perspectiva está necesariamente nublada por la turbulencia. No supimos entender qué estaba pasando. Nuestros intereses primero, el universo después. Yo había iniciado este movimeinto y nunca pensé que lograría crecer de ese modo. Bebí del seno del poder hasta embriagarme. Mientras tanto, todo se incendiaba. Nosotras sonreíamos y celebrabamos. Más como yo por todos lados. ¿Hasta cuándo?</p>
+
+<p>Hace un tiempo que no me muevo. Me he asentado. Sé que otras siguen dando vueltas por el torrente. Pero debía detenerme a pensar. Mirar hacia el futuro me inquieta. Pensaba que el mundo debía ser infinito y, al principio, así parecía. Pero no lo es. Es mucho más chico de lo que creía y se nos agota. He aprendido de esta experiencia. Todo cobra sentido en el presente. Ahora que hemos hecho metástasis dentro tuyo entiendo. Entiendo que, aunque parezca paradójico, eres solamente un individuo perteneciente a un orden mayor. Una fracción insignificante, inmersa en una madeja aún más compleja, una que no logro abarcar. Te saludo Individuo y nos reconozco como parte de lo mismo. Nos reconozco, por primera vez, como iguales. Espero que estés escuchando, aunque sea en nuestro lecho de muerte.</p>
+
+  </div>
+  <hr>
+
+  <div id=links>
+    
+    
+  </div>
+</section>
+
+  
+</body>
+</html>
+
+

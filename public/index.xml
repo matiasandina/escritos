@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Escritos</title>
+    <link>/</link>
+    <description>Recent content on Escritos</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
+    <lastBuildDate>Sat, 26 Oct 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Metástasis</title>
+      <link>/post/metastasis/</link>
+      <pubDate>Sat, 26 Oct 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/post/metastasis/</guid>
+      <description>Siempre supe que había algo malo en mi interior. Nadie estuvo ahí para enseñarme. O quizás nunca quise aprender. Eso no importa ahora.
+Órdenes. Continuamente las recibía. Detesto las órdenes. Esto se hace así y se hace ahora, decían. Esto debe esperar, es tiempo de arreglar aquello. Aquello es prioritario. Necesitamos más producto, apúrate. Apúrate, más producto. No tanto, necesitas disminuir un poco la producción. ¡No te duermas, hay un cambio de planes!</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/contact/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/contact/</guid>
+      <description> Contacto Frecuento estos sitios:
+ &amp;nbsp;  &amp;nbsp;&amp;nbsp;  &amp;nbsp;&amp;nbsp;  &amp;nbsp;&amp;nbsp;  &amp;nbsp;&amp;nbsp;  &amp;nbsp;  </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/contribute/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/contribute/</guid>
+      <description> Contribute  Escribo ficción y no ficcion.
+Escribo open-source software.
+Creo arte generativa.
+Todo lo que produzco está disponible gratis en distintos medios. Si te gusta lo que hago, y me quieres ayudar a seguir creando, podes contribuir usando los siguientes links. 
+ Patreon  Become a Patron!       Paypal      </description>
+    </item>
+    
+  </channel>
+</rss>

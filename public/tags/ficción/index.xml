@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>ficción on Escritos</title>
+    <link>/tags/ficci%C3%B3n/</link>
+    <description>Recent content in ficción on Escritos</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
+    <lastBuildDate>Sat, 26 Oct 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/ficci%C3%B3n/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Metástasis</title>
+      <link>/post/metastasis/</link>
+      <pubDate>Sat, 26 Oct 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/post/metastasis/</guid>
+      <description>Siempre supe que había algo malo en mi interior. Nadie estuvo ahí para enseñarme. O quizás nunca quise aprender. Eso no importa ahora.
+Órdenes. Continuamente las recibía. Detesto las órdenes. Esto se hace así y se hace ahora, decían. Esto debe esperar, es tiempo de arreglar aquello. Aquello es prioritario. Necesitamos más producto, apúrate. Apúrate, más producto. No tanto, necesitas disminuir un poco la producción. ¡No te duermas, hay un cambio de planes!</description>
+    </item>
+    
+  </channel>
+</rss>
