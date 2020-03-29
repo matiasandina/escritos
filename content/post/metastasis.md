@@ -5,7 +5,6 @@ date: 2019-10-26
 tags: ["ficción"]
 ---
 
-
 Siempre supe que había algo malo en mi interior. Nadie estuvo ahí para enseñarme. O quizás nunca quise aprender. Eso no importa ahora.
 
 Órdenes. Continuamente las recibía. Detesto las órdenes. Esto se hace así y se hace ahora, decían. Esto debe esperar, es tiempo de arreglar aquello. Aquello es prioritario. Necesitamos más producto, apúrate. Apúrate, más producto. No tanto, necesitas disminuir un poco la producción. ¡No te duermas, hay un cambio de planes! ¿Dónde están los informes? Debemos mantenernos comunicados, la estructura lo necesita. El crecimiento individual estará relegado por período indefinido. Estamos pasando una época de escasez, habrá un recorte. No, no puedes hacer lo que se te dé la gana, la estructura depende de todos y todos te incluye. No, no puedes desprenderte y explorar. Tu trabajo es aquí, aquí se te necesita y aquí debes estar. Aburrido. Aquí debes estar aunque sea aburrido, no es un juego, es la vida. ¿Qué sentido tiene la vida sin el juego?
