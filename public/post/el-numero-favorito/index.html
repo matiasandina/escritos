@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="referrer" content="no-referrer">
+    
+
+    
+      <link href='https://fonts.googleapis.com/css?family=Open+Sans:400|Old+Standard+TT:400' rel='stylesheet' type='text/css'>
+    
+
+    <link rel="icon" type="image/png" href="/favicon_16x16.png" sizes="16x16">
+    <link rel="icon" type="image/png" href="/favicon_32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="/favicon_128x128.png" sizes="128x128">
+
+    <title>
+      
+      
+         El número favorito 
+      
+    </title>
+    <link rel="canonical" href="/post/el-numero-favorito/">
+
+    <style>
+  * {
+    border:0;
+    font:inherit;
+    font-size:100%;
+    vertical-align:baseline;
+    margin:0;
+    padding:0;
+    color: black;
+    text-decoration-skip: ink;
+  }
+
+  body {
+    font-family:'Open Sans', 'Myriad Pro', Myriad, sans-serif;
+    font-size:17px;
+    line-height:160%;
+    color:#1d1313;
+    max-width:700px;
+    margin:auto;
+  }
+
+  p {
+    margin: 20px 0;
+  }
+
+  a img {
+    border:none;
+  }
+
+  img {
+    margin: 10px auto 10px auto;
+    max-width: 100%;
+    display: block;
+  }
+
+  .left-justify {
+    float: left;
+  }
+
+  .right-justify {
+    float:right;
+  }
+
+  pre, code {
+    font: 12px Consolas, "Liberation Mono", Menlo, Courier, monospace;
+    background-color: #f7f7f7;
+  }
+
+  code {
+    font-size: 12px;
+    padding: 4px;
+  }
+
+  pre {
+    margin-top: 0;
+    margin-bottom: 16px;
+    word-wrap: normal;
+    padding: 16px;
+    overflow: auto;
+    font-size: 85%;
+    line-height: 1.45;
+  }
+
+  pre>code {
+    padding: 0;
+    margin: 0;
+    font-size: 100%;
+    word-break: normal;
+    white-space: pre;
+    background: transparent;
+    border: 0;
+  }
+
+  pre code {
+    display: inline;
+    max-width: auto;
+    padding: 0;
+    margin: 0;
+    overflow: visible;
+    line-height: inherit;
+    word-wrap: normal;
+    background-color: transparent;
+    border: 0;
+  }
+
+  pre code::before,
+  pre code::after {
+    content: normal;
+  }
+
+  em,q,em,dfn {
+    font-style:italic;
+  }
+
+  .sans,html .gist .gist-file .gist-meta {
+    font-family:"Open Sans","Myriad Pro",Myriad,sans-serif;
+  }
+
+  .mono,pre,code,tt,p code,li code {
+    font-family:Menlo,Monaco,"Andale Mono","lucida console","Courier New",monospace;
+  }
+
+  .heading,.serif,h1,h2,h3 {
+    font-family:"Old Standard TT",serif;
+  }
+
+  strong {
+    font-weight:600;
+  }
+
+  q:before {
+    content:"\201C";
+  }
+
+  q:after {
+    content:"\201D";
+  }
+
+  del,s {
+    text-decoration:line-through;
+  }
+
+  blockquote {
+    font-family:"Old Standard TT",serif;
+    text-align:center;
+    padding:50px;
+  }
+
+  blockquote p {
+    display:inline-block;
+    font-style:italic;
+  }
+
+  blockquote:before,blockquote:after {
+    font-family:"Old Standard TT",serif;
+    content:'\201C';
+    font-size:35px;
+    color:#403c3b;
+  }
+
+  blockquote:after {
+    content:'\201D';
+  }
+
+  hr {
+    width:40%;
+    height: 1px;
+    background:#403c3b;
+    margin: 25px auto;
+  }
+
+  h1 {
+    font-size:35px;
+  }
+
+  h2 {
+    font-size:28px;
+  }
+
+  h3 {
+    font-size:22px;
+    margin-top:18px;
+  }
+
+  h1 a,h2 a,h3 a {
+    text-decoration:none;
+  }
+
+  h1,h2 {
+    margin-top:28px;
+  }
+
+  #sub-header, time {
+    color:#403c3b;
+    font-size:13px;
+  }
+
+  #sub-header {
+    margin: 0 4px;
+  }
+
+  #nav h1 a {
+    font-size:35px;
+    color:#1d1313;
+    line-height:120%;
+  }
+
+  .posts_listing a,#nav a {
+    text-decoration: none;
+  }
+
+  li {
+    margin-left: 20px;
+  }
+
+  ul li {
+    margin-left: 5px;
+  }
+
+  ul li {
+    list-style-type: none;
+  }
+  ul li:before {
+    content:"\00BB \0020";
+  }
+
+  #nav ul li:before, .posts_listing li:before {
+    content:'';
+    margin-right:0;
+  }
+
+  #content {
+    text-align:left;
+    width:100%;
+    font-size:15px;
+    padding:60px 0 80px;
+  }
+
+  #content h1,#content h2 {
+    margin-bottom:5px;
+  }
+
+  #content h2 {
+    font-size:25px;
+  }
+
+  #content .entry-content {
+    margin-top:15px;
+  }
+
+  #content time {
+    margin-left:3px;
+  }
+
+  #content h1 {
+    font-size:30px;
+  }
+
+  .highlight {
+    margin: 10px 0;
+  }
+
+  .posts_listing {
+    margin:0 0 50px;
+  }
+
+  .posts_listing li {
+    margin:0 0 25px 15px;
+  }
+
+  .posts_listing li a:hover,#nav a:hover {
+    text-decoration: underline;
+  }
+
+  #nav {
+    text-align:center;
+    position:static;
+    margin-top:60px;
+  }
+
+  #nav ul {
+    display: table;
+    margin: 8px auto 0 auto;
+  }
+
+  #nav li {
+    list-style-type:none;
+    display:table-cell;
+    font-size:15px;
+    padding: 0 20px;
+  }
+
+  #links {
+    margin: 50px 0 0 0;
+  }
+
+  #links :nth-child(2) {
+    float:right;
+  }
+
+  #not-found {
+    text-align: center;
+  }
+
+  #not-found a {
+    font-family:"Old Standard TT",serif;
+    font-size: 200px;
+    text-decoration: none;
+    display: inline-block;
+    padding-top: 225px;
+  }
+
+  @media (max-width: 750px) {
+    body {
+      padding-left:20px;
+      padding-right:20px;
+    }
+
+    #nav h1 a {
+      font-size:28px;
+    }
+
+    #nav li {
+      font-size:13px;
+      padding: 0 15px;
+    }
+
+    #content {
+      margin-top:0;
+      padding-top:50px;
+      font-size:14px;
+    }
+
+    #content h1 {
+      font-size:25px;
+    }
+
+    #content h2 {
+      font-size:22px;
+    }
+
+    .posts_listing li div {
+      font-size:12px;
+    }
+  }
+
+  @media (max-width: 400px) {
+    body {
+      padding-left:20px;
+      padding-right:20px;
+    }
+
+    #nav h1 a {
+      font-size:22px;
+    }
+
+    #nav li {
+      font-size:12px;
+      padding: 0 10px;
+    }
+
+    #content {
+      margin-top:0;
+      padding-top:20px;
+      font-size:12px;
+    }
+
+    #content h1 {
+      font-size:20px;
+    }
+
+    #content h2 {
+      font-size:18px;
+    }
+
+    .posts_listing li div{
+      font-size:12px;
+    }
+  }
+
+  @media (prefers-color-scheme: dark) {
+    *, #nav h1 a {
+      color: #FDFDFD;
+    }
+
+    body {
+      background: #121212;
+    }
+
+    pre, code {
+      background-color: #262626;
+    }
+
+    #sub-header, time {
+      color: #BABABA;
+    }
+
+    hr {
+      background: #EBEBEB;
+    }
+  }
+</style>
+
+
+    
+  </head>
+
+  <body>
+    <section id=nav>
+      <h1><a href="/">Matias Andina</a></h1>
+      <ul>
+        
+          <li><a href="https://matiasandina.netlify.com/about/">About</a></li>
+        
+          <li><a href="/contribute">Contribuir</a></li>
+        
+          <li><a href="/contact">Contacto</a></li>
+        
+      </ul>
+    </section>
+
+
+<section id=content>
+  <h1> El número favorito </h1>
+
+  
+    <div id=sub-header>
+      June 2020 · 14 minute read
+    </div>
+  
+  
+
+
+  <ul>
+    
+      <li>
+          <a href="/tags/ficci%C3%B3n/">ficci%C3%B3n</a>
+        </li></ul>
+
+  <hr>
+
+  <div class="entry-content">
+    <p>Eugenio Saratoga era periodista de sangre hirviente. Apaciguado por las necesidades económicas de un rubro que te entrega todo y te lo quita con la misma facilidad, debió adecuar sus tonos para mantenerse a flote y en el ojo de la cámara por tantos años. Sus ojos marrones poseían destellos de verde, como los rayos de una bicicleta, y miraban con atención el borde de sus cejas anchas en el espejo. Cuando tenía entrevistas, ocupaba la mañana completa en acicalarse con disciplina envidiable, ninguna marca en la cara, ningún cabello fuera de lugar.</p>
+
+<p>Peinaba su frondosa melena colorada con un cepillo de madera traído de Dinamarca. Poco le importaba que la peluquera del canal volviera a hacerlo más tarde, salir con el pelo desordenado estaba simplemente fuera de las posibilidades. Salir con el pelo desordenado estaba ubicado en penúltimo lugar en la lista de cosas detestables, únicamente superado por salir con el pelo sucio. Eugenio no podía soportarlo, sentía ardor en las orejas, como si la gente pudiera ver, a la distancia, la mugre acumulada durante las escasas horas sin lavar.</p>
+
+<p>Eugenio escucha las noticias en la radio, es una cuestión generacional. Prefiere escuchar la voz de un humano que lea la noticia, aunque ese humano no sea periodista, aunque la noticia esté escrita por un robot, aunque sea el pronóstico del clima. La sensación de una aterciopelada garganta acariciando el micrófono no tiene precio. Además, un periodista de raza se mantiene informado las veinticuatro horas, utilizando todos los medios a su alcance. Terminó de escuchar la ronda de noticias en la radio y salió para conseguir un taxi que lo lleve al canal. Eugenio no maneja, le tiene pánico a los otros autos, a las motos, a las bicicletas. Prefiere ocupar su tiempo en devorar más información. Eugenio lee el diario en papel, es una cuestión generacional. Fija su vista estudiando cada detalle del texto, aquellos garabatos serif lo estimulan. Resalta, escribe, hace monigotes sobre los márgenes de papel mate. Quizás sea el ruido al pasar las hojas, o el olor, o las manchas en los dedos que combate pasándose un pañuelo con alcohol. Eugenio no lo sabe con certeza, pero la versión electrónica no es lo mismo.</p>
+
+<p>El viaje normalmente toma veintitrés minutos. Hoy no fue la excepción. Eugenio siempre entra por la entrada principal, aunque el camino sea más largo. Esta entrada posee una escalinata larga, de cincuenta y un escalones para ser exactos. Los recorre con zancadas de atleta, entrando en la sucesión de rutinas que lo ayudan a concentrarse para hacer su trabajo. Después de la entrada, un giro a la izquierda para descender por las escaleras que llevan a los pasillos de camerinos. Unas cuantas zancadas después, llega al suyo. No lo comparte, es una cuestión generacional. Además, Eugenio es metódico, necesita encontrar las cosas en el lugar en donde deberían estar, no soportaría que otra persona mueva los objetos de su lugar. La ropa lo esperaba en la percha correspondiente. Acomodó sus largas piernas dentro del pantalón del traje, abrochó su cinturón de hebilla dorada y acomodó su camisa.</p>
+
+<p>Estaba listo para la entrevista. Sentía un calor extraño, un calor surgido del eterno rozamiento con los productores del programa. Estaba harto, no le quedaba voluntad alguna para hacer frente a la voz rasposa del director, que constantemente le taladra lo sesos por la oreja izquierda e impide que pueda entregar atención plena a su entrevistado de turno. Este sentimiento combinaba mal con la vejez, el dolor de rodillas al incorporarse y una tos mal curada de hace dos inviernos que no se resignaba a ser aplacada con pastillas de menta. Le dolía la cabeza pero su funcionamiento era casi óptimo, diría, más que nada, que estaba cansado.</p>
+
+<p>El esquema de la entrevista era tan paupérrimo como otras veces, pregunta frívola, pregunta estúpida, pregunta difícil para generar miedo a las matemáticas, ir a la pausa para vender champú, un seguro de autos y una película de superhéroes, volver al programa para preguntarle si hace alguna otra cosa en su vida, algo de ser humano, como respirar. Agradecer nuevamente a los auspiciantes y bajar el telón. Tragó el restante de la pastilla de menta, y se dispuso a ensayar las primeras líneas de la presentación para calentar la garganta. Los años no han hecho mella en sus atributos de periodista televisivo, conserva una voz cálida y una tez blanca, lampiña inmaculada, como de niño. Tiene la dosis justa de seriedad y la capacidad de hacer reír sin ser especialmente cómico. Algunos le llamarían carisma, es una cuestión generacional.</p>
+
+<p>El ritmo se acelera, no importa cuantos años lleve haciendo el trabajo, siempre se acelera cuando llega la hora de la acción. Eugenio no tenía bien en claro cómo, pero ya se encontraba directamente en frente de la cámara, un arco reflejo dictando las próximas líneas de la introducción del invitado, que no necesitaba leer del teleprónter. Su mente estaba situada en otro sitio, abstraída de la realidad y lo que estaba ocurriendo. Necesitaba salir de aquel lugar y sus pies estaban clavados en el suelo. Este sentimiento le es por demás familiar, era hora de hacer algo al respecto. Aplausos, un viejo amigo materializándose desde la escenografía. Un cálido abrazo, un recuerdo, una idea alocada. El periodista se aventuró con una pregunta sencilla para desestructurar.</p>
+
+<p>– ¿Cuál es su número favorito?</p>
+
+<p>El entrevistado sonrió con cierta malicia, un lector de mente diría que estaba frotándose las manos, saboreando una complicidad maquiavélica. Pero no se le movió ni un músculo, la efímera sonrisa se desdibujó hacia una expresión relajada.</p>
+
+<p>– Mi número favorito es el imaginario, digo esto con el perdón de Gauss, que quería llamarlos &ldquo;laterales&rdquo; en vez de &ldquo;imaginarios&rdquo;. Resalto al número imaginario porque tiene la capacidad de inventarse a sí mismo, la capacidad de transformarse infinitamente a la realidad o mantenerse en una irrealidad sombría. Tiene la capacidad de aparecer en los lugares más impensados, pero no menos necesarios y, así como aparece, se aniquila a sí mismo para convertirse en la identidad, signos aparte, la mismísima identidad.</p>
+
+<p>El periodista se mantuvo en silencio, mirando con cierto desconcierto a su entrevistado que entendió que el silencio le permitía continuar explayándose.</p>
+
+<p>– ¿Tengo que decir uno real? – preguntó el matemático</p>
+
+<p>El periodista no dijo nada, dio lugar.</p>
+
+<p>– Raíz cuadrada de dos. No es el primer irracional que se aprende, pi se aprende primero, pero sería tramposo porque está intrínsecamente ligado al círculo. Quizás raíz de dos haya sido el primero que la Humanidad haya descubierto como tal, como irracional con nombre y apellido. Destilado de un triángulo rectángulo isósceles de lado uno, debe haber sido un gran dolor de cabeza y, a la vez, un cambio de paradigma indescriptible. Intentar conceptualizar la magnitud exacta de este número no es tarea trivial, pero sí tenemos acceso a abstraerlo, encasillarlo, para apreciar la belleza emergente del problema. Parece tan sencillo y sin embargo&hellip;</p>
+
+<p>– Y sin embargo&hellip;no. – completa Eugenio</p>
+
+<p>– Eso lo hace especial. Es notable, una geometría tan básica enjaulando un tigre de infinitos dígitos no repetitivos, un número que no se puede racionalizar, magnífico.</p>
+
+<p>Para este punto, la conversa se había salido completamente de los tópicos a tratar, el teleprónter caminaba rengo. El periodista, fiel a un estereotipo infame de espectador atemorizado por los números, decidió jugar el juego una vuelta más, apelando a una sencillez que no encontraría en el matemático:</p>
+
+<p>– ¿Quizás uno más sencillo?<br />
+– ¿Tengo que decir uno racional?</p>
+
+<p>No hubo silencio, pero el matemático tampoco dio pie para que otro humano intercediera en su cometido.</p>
+
+<p>– El cuatro tercios. En primer lugar, es periódico&hellip;<br />
+– Como el un tercio. - interrumpió Eugenio<br />
+– Pero el cuatro tercios juega en otra liga. El volumen de cualquier esfera está intrínsicamente ligado al número cuatro tercios. No hablo de una esfera especial, con ciertas características, hablo de todas ellas. Tome un compás de doce golpes. En su mano izquierda toque tres golpes separados cada cuatro y en su mano derecha toque cuatro golpes separados cada tres. Así&hellip;¿Ve qué interesante? Luego tome un piano toque un La, si lo multiplica por cuatro tercios obtendrá un Re. Son los sonidos de cuatro tercios. Por alguna razón nos atraen de manera poderosa.<br />
+– Pero no entra en la hoja, me gusta escribir todos los decimales.</p>
+
+<p>El matemático dejó escapar un sonido gutural poco feliz.</p>
+
+<p>– ¿Tengo que decir uno racional no periódico?</p>
+
+<p>El periodista se encogió de hombros. No exactamente como respuesta al entrevistado, sino a los gestos de exasperación que recibía detrás de cámara y las voces amenazantes en su auricular.</p>
+
+<p>– Un cuarto. Es fácil cortar cosas en cuartos, como los cuatro cuadrantes del plano cartesiano o una pizza cortada en cuatro porciones. Dos rayas ortogonales y ya. El cuarto es muy funcional y mucho más fácil de conceptualizar que otras fracciones. Es poco y mucho a la vez, como un cuarto de milla o cuarto kilo de helado. Todo el mundo puede entenderlo y manejarlo, como un cuarto de hora, mientras que nadie dice un sexto o un tercio de hora, la gente dice diez o veinte minutos. La gente sí dice &ldquo;media hora&rdquo; pero el medio es notablemente más aburrido o peligroso, como las parejas y el divorcio. Si&hellip;partir cosas en dos suena a divorcio.</p>
+
+<p>Eugenio dejó escapar una risa nerviosa frente al comentario, no podía evitar acomodarse el cuello de la camisa y pensar en los millones que perdió tras su último divorcio.</p>
+
+<p>– No dividamos a la gente entonces&hellip;<br />
+– ¿Tengo que decir uno entero?<br />
+– Por favor&hellip;<br />
+– El menos uno, porque es &ldquo;el contra&rdquo;, el opuesto, el rebelde, aquel que se opone al resto. Es también el que puede definir la resta a partir de la suma, como la suma del opuesto o la suma de n veces el opuesto. Es el único número que define a un conjunto de números de manera tan directa y es el resultado de una de las identidades más bellas que posee este lenguaje hermoso que llamamos matemáticas.<br />
+– Ustedes los matemáticos son gente complicada&hellip;<br />
+– ¿Tengo que decir uno natural?</p>
+
+<p>El matemático hizo una pausa. Notaba desconcierto en el personal detrás de cámara, que no entendía por qué el conductor del programa había permitido desviarse de lo planeado. Decidió complacerlos.</p>
+
+<p>– El cinco, es primo y me gusta.<br />
+– El cinco. – el conductor mojó sus labios y volvió a poner el vaso de agua sobre la pequeña mesa – Vaya hombre&hellip;hemos acabado el tiempo que teníamos para el programa con una pregunta que ni figuraba en la lista, la solté como quien habla del clima y usted se ha despachado con un ensayo impresionante.</p>
+
+<p>El matemático sonrió, saboreando la oportunidad que tenía en frente. Tomó aire y esperanzas, quizás hubiera alguien del otro lado de la pantalla, escuchando.</p>
+
+<p>– Verá&hellip;su pregunta podría parecerle muy directa pero en realidad no lo era. Sin duda no lo es para alguien con formación matemática. Este es un problema de objetivos, ¿cuál es el objetivo de su pregunta? ¿Cuál es el objetivo detrás de la acumulación de información? Opino que nuestro objetivo es la comprensión de nuestro entorno. Pero no existe una única dirección que nos lleve hacia él. Alcanzar el entendimiento de un objeto o sistema debe llevarse a cabo desde el cambio de perspectiva. Afirmo convencido que, al cambiar de perspectiva, al mirar con otros ojos, aprendemos algo nuevo sobre aquello que miramos. En matemática, este es un ejercicio recurrente, es nuestro entrenamiento cotidiano dado que practicamos estos problemas de manera frecuente. Por ejemplo, la suma y la multiplicación son dos perspectivas de un mismo fenómeno, incluso una es consecuencia directa de la otra, debido al modo en el que están definidas las operaciones y, sin embargo, los comportamientos que emergen de nuestro cambio de perspectiva, de explorar la analogía, son increíblemente diversos. Podríamos decir que la multiplicación es como la suma. Pero si movemos las condiciones un poquito, si agitamos los factores, las expresiones explotan de formas que no eran predecibles en primera instancia. A primera vista, las sumas son intuitivas por demás, nuestro cerebro sabe contar, sabe acumular elementos, agregar uno al grupo. Sin embargo, las multiplicaciones se comportan de manera distinta, crecen mucho más rápido, saltan, en pocas iteraciones podemos encontrarnos frente a números que no podemos conceptualizar.</p>
+
+<p>En el audífono de Eugenio, las últimas tres frases del matemático habían sido condimentadas con una serie de insultos, frases punzantes y amenazas, el champú no podía esperar más monólogos. Eugenio se quitó el auricular de manera poco disimulada y lo dejó sobre su hombro. Aún así mantuvo la postura con una sonrisa y oídos bien abiertos, demostrándole a su invitado que el camino estaba limpio para continuar. El matemático tomó aire y volvió a expresarse.</p>
+
+<p>– Como docente, mi trabajo es facilitar la construcción independiente de este entendimiento, que permite explorar tareas mucho más complejas que la de realizar operaciones, permite abstraer, generalizar.  Naturalmente entonces, utilizar analogías es parte integral de mi trabajo. Utilizo metáforas, invento historias detrás de los números. Hago esto para inculcar el hábito de observar el mundo desde distintos ángulos, para buscar reglas generales, abstracciones hacia principios fundamentales que puedan ser extendidos en aplicaciones prácticas infinitas. Nuestro fin último es generar leyes elementales del Universo, motivos irreducibles de la realidad, que apliquen a los espacios más amplios posibles. Intento inculcar en mis alumnos la pasión por este juego no trivial al que llamamos cambiar de perspectiva, que invita a prestarse las metáforas para escribir nuevos poemas, a contar la historia de manera diferente, con una narrativa distinta, una narrativa ajena. Si tomamos distintos observadores y les enseñamos una hoja con cinco puntos, cinco puntos en el espacio, algunos verán sólo esos cinco puntos, otros una figura con bordes, como un aro de alambre. Otros ven un pentágono, sólido, relleno, o una estrella de cinco puntas. La creatividad los obligará a ver una estrella dentro de un pentágono. Pero si miramos con atención también vemos muchos triángulos. ¿Cuántos son? Hay distintas formas de contarlos, son 35 de ellos. Otros ven una una sucesión infinita de pentágonos y estrellas, de triángulos que se intersectan y solapan. Y usted preguntará, ¿cuál visión es la correcta? ¿Cuál es la favorita?</p>
+
+<p>Eugenio guardó silencio, sonriente ante el argumento de su amigo.</p>
+
+<p>– ¿Lo ve? No es sencillo&hellip;Y este fenómeno es una ley natural, el observador afecta el resultado. Este discurso, o sermón, que parece tan ajeno, debería sonar familiar. Hay gente que no lo llama matemática, lo llama empatía. El título me importa poco, porque cambiar la perspectiva y ponerme en el lugar de otro me permite incrementar el entendimiento de la realidad, que es el único objetivo de este juego tan hermoso. Responder a su pregunta implica hacer un ranking, colapsar el universo, hacerlo unidimensional. Pero me temo que no puedo complacerlo, el universo unidimensional es una pésima aproximación. La realidad no se presenta de este modo, la realidad es compleja y necesita que la analicemos desde diversas perspectivas. Necesita que rotemos el ojo observador, que cambiemos el origen de coordenadas, o el sistema de coordenadas. La realidad no puede ser medida siempre de la misma manera, nos precisa conscientes de las distintas escalas en las que ocurren los procesos dinámicos, como la formación de una cordillera o la fusión de dos átomos, nos precisa conscientes de jerarquías y términos despreciables, que pueden volverse determinantes al cambiar las condiciones de contorno. La realidad no es intuitiva, precisa ser descrita analíticamente, modelada, y ensayada en los extremos. Lamentablemente se nos presenta esquiva, pero no porque así lo sea sino debido a nuestra precariedad cognitiva. Por eso es que constantemente debemos medirla para ajustar nuestras las ecuaciones y, en general, nos cuesta mucho entender el funcionamiento en los extremos. En el límite, las funciones de nuestro cuerpo, nuestro ecosistema y nuestro Universo, florecen o se degeneran. Y a veces no existe dicho limite, a veces hay ruptura, a veces no hay vuelta atrás.</p>
+
+<p>Eugenio esperó unos segundos para asegurarse de que su amigo había terminado, se incorporó para abrazarlo. Luego le quitó el micrófono e hizo lo propio con el suyo. Los dejó sobre la mesa y le mostró la salida a su invitado con una leve palmada en la espalda y una indicación con la mano. Caminaron juntos hacia la salida en silencio, los pasos haciendo eco en el concreto y rebotando por las paredes. Subieron las escaleras hacia la entrada principal.</p>
+
+<p>– Bueno amigo, la obra llega a su fin.<br />
+– No me diga eso, maestro, el show debe continuar.<br />
+– Maestro&hellip;Estoy viejo, maestro. Estoy cansado, harto de escuchar nimiedades disfrazadas de investigación con fundamento. Si no vende, si no mantiene a la gente mirando, no sirve. ¿Cuánto tiempo se dedica a un análisis profundo de la realidad? ¿Qué valor se le da a la palabra de un profesional, de un experto? Mirando&hellip;quizás estén mirando del otro lado, pero ni siquiera sé si me están escuchando&hellip;¿Te suena familiar?</p>
+
+<p>El matemático dejó escapar una risa.</p>
+
+<p>– ¿Un café?<br />
+– Por favor.<br />
+– Yo invito, estás desempleado.<br />
+– Si es así, entonces que sean cinco.</p>
+
+<p>Los amigos cruzaron las puertas del canal riendo a carcajadas.</p>
+
+  </div>
+  <hr>
+
+  <div id=links>
+    
+      <a class="basic-alignment left" href="/post/realidad-con-descuento/">&laquo; Realidad con descuento</a>
+    
+    
+  </div>
+</section>
+
+  
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-164651073-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+</body>
+</html>
+
+

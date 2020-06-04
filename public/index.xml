@@ -7,10 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>es</language>
     <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
-    <lastBuildDate>Sun, 19 Apr 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 04 Jun 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>El número favorito</title>
+      <link>/post/el-numero-favorito/</link>
+      <pubDate>Thu, 04 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/post/el-numero-favorito/</guid>
+      <description>Eugenio Saratoga era periodista de sangre hirviente. Apaciguado por las necesidades económicas de un rubro que te entrega todo y te lo quita con la misma facilidad, debió adecuar sus tonos para mantenerse a flote y en el ojo de la cámara por tantos años. Sus ojos marrones poseían destellos de verde, como los rayos de una bicicleta, y miraban con atención el borde de sus cejas anchas en el espejo.</description>
+    </item>
     
     <item>
       <title>Realidad con descuento</title>
