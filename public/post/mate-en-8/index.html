@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="referrer" content="no-referrer">
+    
+
+    
+      <link href='https://fonts.googleapis.com/css?family=Open+Sans:400|Old+Standard+TT:400' rel='stylesheet' type='text/css'>
+    
+
+    <link rel="icon" type="image/png" href="/favicon_16x16.png" sizes="16x16">
+    <link rel="icon" type="image/png" href="/favicon_32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="/favicon_128x128.png" sizes="128x128">
+
+    <title>
+      
+      
+         Mate en 8 
+      
+    </title>
+    <link rel="canonical" href="/post/mate-en-8/">
+
+    <style>
+  * {
+    border:0;
+    font:inherit;
+    font-size:100%;
+    vertical-align:baseline;
+    margin:0;
+    padding:0;
+    color: black;
+    text-decoration-skip: ink;
+  }
+
+  body {
+    font-family:'Open Sans', 'Myriad Pro', Myriad, sans-serif;
+    font-size:17px;
+    line-height:160%;
+    color:#1d1313;
+    max-width:700px;
+    margin:auto;
+  }
+
+  p {
+    margin: 20px 0;
+  }
+
+  a img {
+    border:none;
+  }
+
+  img {
+    margin: 10px auto 10px auto;
+    max-width: 100%;
+    display: block;
+  }
+
+  .left-justify {
+    float: left;
+  }
+
+  .right-justify {
+    float:right;
+  }
+
+  pre, code {
+    font: 12px Consolas, "Liberation Mono", Menlo, Courier, monospace;
+    background-color: #f7f7f7;
+  }
+
+  code {
+    font-size: 12px;
+    padding: 4px;
+  }
+
+  pre {
+    margin-top: 0;
+    margin-bottom: 16px;
+    word-wrap: normal;
+    padding: 16px;
+    overflow: auto;
+    font-size: 85%;
+    line-height: 1.45;
+  }
+
+  pre>code {
+    padding: 0;
+    margin: 0;
+    font-size: 100%;
+    word-break: normal;
+    white-space: pre;
+    background: transparent;
+    border: 0;
+  }
+
+  pre code {
+    display: inline;
+    max-width: auto;
+    padding: 0;
+    margin: 0;
+    overflow: visible;
+    line-height: inherit;
+    word-wrap: normal;
+    background-color: transparent;
+    border: 0;
+  }
+
+  pre code::before,
+  pre code::after {
+    content: normal;
+  }
+
+  em,q,em,dfn {
+    font-style:italic;
+  }
+
+  .sans,html .gist .gist-file .gist-meta {
+    font-family:"Open Sans","Myriad Pro",Myriad,sans-serif;
+  }
+
+  .mono,pre,code,tt,p code,li code {
+    font-family:Menlo,Monaco,"Andale Mono","lucida console","Courier New",monospace;
+  }
+
+  .heading,.serif,h1,h2,h3 {
+    font-family:"Old Standard TT",serif;
+  }
+
+  strong {
+    font-weight:600;
+  }
+
+  q:before {
+    content:"\201C";
+  }
+
+  q:after {
+    content:"\201D";
+  }
+
+  del,s {
+    text-decoration:line-through;
+  }
+
+  blockquote {
+    font-family:"Old Standard TT",serif;
+    text-align:center;
+    padding:50px;
+  }
+
+  blockquote p {
+    display:inline-block;
+    font-style:italic;
+  }
+
+  blockquote:before,blockquote:after {
+    font-family:"Old Standard TT",serif;
+    content:'\201C';
+    font-size:35px;
+    color:#403c3b;
+  }
+
+  blockquote:after {
+    content:'\201D';
+  }
+
+  hr {
+    width:40%;
+    height: 1px;
+    background:#403c3b;
+    margin: 25px auto;
+  }
+
+  h1 {
+    font-size:35px;
+  }
+
+  h2 {
+    font-size:28px;
+  }
+
+  h3 {
+    font-size:22px;
+    margin-top:18px;
+  }
+
+  h1 a,h2 a,h3 a {
+    text-decoration:none;
+  }
+
+  h1,h2 {
+    margin-top:28px;
+  }
+
+  #sub-header, time {
+    color:#403c3b;
+    font-size:13px;
+  }
+
+  #sub-header {
+    margin: 0 4px;
+  }
+
+  #nav h1 a {
+    font-size:35px;
+    color:#1d1313;
+    line-height:120%;
+  }
+
+  .posts_listing a,#nav a {
+    text-decoration: none;
+  }
+
+  li {
+    margin-left: 20px;
+  }
+
+  ul li {
+    margin-left: 5px;
+  }
+
+  ul li {
+    list-style-type: none;
+  }
+  ul li:before {
+    content:"\00BB \0020";
+  }
+
+  #nav ul li:before, .posts_listing li:before {
+    content:'';
+    margin-right:0;
+  }
+
+  #content {
+    text-align:left;
+    width:100%;
+    font-size:15px;
+    padding:60px 0 80px;
+  }
+
+  #content h1,#content h2 {
+    margin-bottom:5px;
+  }
+
+  #content h2 {
+    font-size:25px;
+  }
+
+  #content .entry-content {
+    margin-top:15px;
+  }
+
+  #content time {
+    margin-left:3px;
+  }
+
+  #content h1 {
+    font-size:30px;
+  }
+
+  .highlight {
+    margin: 10px 0;
+  }
+
+  .posts_listing {
+    margin:0 0 50px;
+  }
+
+  .posts_listing li {
+    margin:0 0 25px 15px;
+  }
+
+  .posts_listing li a:hover,#nav a:hover {
+    text-decoration: underline;
+  }
+
+  #nav {
+    text-align:center;
+    position:static;
+    margin-top:60px;
+  }
+
+  #nav ul {
+    display: table;
+    margin: 8px auto 0 auto;
+  }
+
+  #nav li {
+    list-style-type:none;
+    display:table-cell;
+    font-size:15px;
+    padding: 0 20px;
+  }
+
+  #links {
+    margin: 50px 0 0 0;
+  }
+
+  #links :nth-child(2) {
+    float:right;
+  }
+
+  #not-found {
+    text-align: center;
+  }
+
+  #not-found a {
+    font-family:"Old Standard TT",serif;
+    font-size: 200px;
+    text-decoration: none;
+    display: inline-block;
+    padding-top: 225px;
+  }
+
+  @media (max-width: 750px) {
+    body {
+      padding-left:20px;
+      padding-right:20px;
+    }
+
+    #nav h1 a {
+      font-size:28px;
+    }
+
+    #nav li {
+      font-size:13px;
+      padding: 0 15px;
+    }
+
+    #content {
+      margin-top:0;
+      padding-top:50px;
+      font-size:14px;
+    }
+
+    #content h1 {
+      font-size:25px;
+    }
+
+    #content h2 {
+      font-size:22px;
+    }
+
+    .posts_listing li div {
+      font-size:12px;
+    }
+  }
+
+  @media (max-width: 400px) {
+    body {
+      padding-left:20px;
+      padding-right:20px;
+    }
+
+    #nav h1 a {
+      font-size:22px;
+    }
+
+    #nav li {
+      font-size:12px;
+      padding: 0 10px;
+    }
+
+    #content {
+      margin-top:0;
+      padding-top:20px;
+      font-size:12px;
+    }
+
+    #content h1 {
+      font-size:20px;
+    }
+
+    #content h2 {
+      font-size:18px;
+    }
+
+    .posts_listing li div{
+      font-size:12px;
+    }
+  }
+
+  @media (prefers-color-scheme: dark) {
+    *, #nav h1 a {
+      color: #FDFDFD;
+    }
+
+    body {
+      background: #121212;
+    }
+
+    pre, code {
+      background-color: #262626;
+    }
+
+    #sub-header, time {
+      color: #BABABA;
+    }
+
+    hr {
+      background: #EBEBEB;
+    }
+  }
+</style>
+
+
+    
+  </head>
+
+  <body>
+    <section id=nav>
+      <h1><a href="/">Matias Andina</a></h1>
+      <ul>
+        
+          <li><a href="https://matiasandina.netlify.com/about/">About</a></li>
+        
+          <li><a href="/contribute">Contribuir</a></li>
+        
+          <li><a href="/contact">Contacto</a></li>
+        
+      </ul>
+    </section>
+
+
+<section id=content>
+  <h1> Mate en 8 </h1>
+
+  
+    <div id=sub-header>
+      June 2020 · 24 minute read
+    </div>
+  
+  
+
+
+  <ul>
+    
+      <li>
+          <a href="/tags/ficci%C3%B3n/">ficci%C3%B3n</a>
+        </li></ul>
+
+  <hr>
+
+  <div class="entry-content">
+    <p>Alfredo salió al balcón. La borrasca traía consigo un viento frío que revolucionaba los pocos pelos que le cubrían la calva. Un hielo le rozó los huesos cuando inspiró con fuerza. A pesar del escalofrío inicial, sintió luego una energía revitalizadora que lo impulsó a ponerse la boina, girar sobre el pie derecho y salir como un joven intrépido de su casa. Bajó las escaleras cual relámpago ─ cosa que no es menor para un septuagenario ─ y se encaminó hacia el Parque Rivadavia. Abrió el gran paraguas negro que conservaba como herencia de su padre y se abalanzó combatiendo la lluvia, un pie andando adelante del otro, por la vereda de baldosas flojas. Hacía varios meses que no se encontraba con su amigo Horacio, un comerciante del barrio de Caballito que tenía dos negocios: un corralón sobre la avenida Pedro Goyena y una casa de lencería sobre la avenida Acoyte, casi esquina Rivadavia.</p>
+
+<p>Horacio continuaba sumamente lúcido y aborrecía la idea de la jubilación. Amaba tanto los dos negocios que nunca pensó en dedicarse a un sólo rubro, los dos medios turnos lo mantenían activo y entretenido. Tenía la doble paciencia de aguantar al pibe que no entiende nada y pide &ldquo;el pituto que se engancha en el cosito&rdquo; y a aquellas señoritas ─ o señoras ─ que, inconformes con su cuerpo, nunca encuentran la lencería adecuada pero tienen tiempo para probarse todas las del local. Para lo que no tenía paciencia era para los hombres que entraban al negocio luciendo una panza esférica con brillo de espejo ─ cual piso recién pulido ─ y compraban el slip más incómodo que uno pueda imaginar. Eso y perder al ajedrez eran las dos cosas que le sacaban de quicio.</p>
+
+<p>Horacio se levantó temprano ─ como todos los domingos ─ leyó el diario mientras tomaba un té con limón y preparaba tostadas. Se escandalizó por la banalidad de las noticias, los pleitos de la televisión, las peripecias políticas de la semana, por aquellos datos que no estaban ─ o que estaban brillando por su ausencia, justo ahí en donde debían resaltar, en la  primera plana ─ y por la desopilante catarata de publicidad que aquél periódico servía en dosis inhumanas, junto con el amarillismo. De nada servía el espasmo intestinal que le provocaba, aquella empresa había nacido antes que él y seguiría existiendo cuando él muriera, desinformando sin que él pudiera hacer nada al respecto. Una vez superado el asco ─ y finalizada la última tostada ─ decidió que era tiempo de ponerse en marcha. Fue así que se bañó, se afeitó meticulosamente y se colocó colonia en cantidad. El frío de aquella mañana lo sorprendió por su persistencia, eran las 8:27 y el termómetro todavía no había cedido ni un grado en las últimas dos horas.  La lluvia, en cambio, no le molestaba en lo más mínimo. Habían jugado con lluvias más corajudas que la de esa mañana. Horacio hubiera declarado bajo juramento que en aquellas ocasiones se había embarrado el tablero. Se colocó su piloto gris encima del abrigo más grueso, unos pantalones de gabardina pesados, zapatos impermeables ─ aunque no menos vistosos ─ y salió a la calle.</p>
+
+<p>Alfredo esquivaba las baldosas flojas como un acróbata campeón. Había sorteado todos los obstáculos de los primeros doscientos metros manteniéndose completamente seco y la lluvia se estaba amilanando. Una sonrisa se le dibujó en el arrugado rostro. El encuentro se había acordado hacía meses y ninguno había hablado con el otro en ese ínterin. Era de esperar, esa lluvia cobarde ─ o respetuosa ─ daría paso a la partida que tenían programada. Así fue que Alfredo cerró el paraguas y continuó con la caminata sinuosa hasta desembarcar en el acceso lateral del Parque. Alfredo nunca entraba por el acceso de la calle Rosario. Por allí entraban los perros o los niños y él quería evitar a ambos. Entró pues, por entre los edificios de rejas que dan al parque, por la rampa para silla de ruedas, que tiene barandas suficientes para asegurar estabilidad. Caminó por el sendero que parte al parque en dos hasta llegar a la estatua de Simón Bolivar, monumento mil veces vandalizado y restaurado. Saludó al difunto inmortalizado en bronce con un leve movimiento de cabeza y acomodándose la boina. Observó que el parque estaba desierto aquel domingo gris y sonrío nuevamente por la tranquilidad que experimentaba el césped. Luego continuó hasta el lateral opuesto donde se encuentra la feria.</p>
+
+<p>Horacio se encontraba en la mesa que elegían siempre. Esperaba parado a su amigo, con el piloto impermeable color ceniza y el pelo engominado. Abajo del brazo, doblado sobre sí mismo descansaba el tablero contenedor de las fichas. Aquél tablero había sido comprado por ambos, con los ahorros de varios jornales de trabajo en la panadería del padre de Horacio. Moneda tras moneda, ambos habían contribuido al pozo que esperaba ser completado en la tienda de juegos de la Avenida de Mayo, a escasos metros del Congreso Nacional. Alfredo todavía recordaba aquél último viaje en el subterráneo con las chirolas que les faltaban, la cara de satisfacción del dueño de la tienda ─ que tenía más que ver con la felicidad provocada por dos niños que ahorraron para jugar al ajedrez que con la venta misma ─ y el olor a nuevo que tenía la madera. Las bisagras habían sido reparadas y la madera barnizada por Horacio en varias ocasiones. Sin embargo, la madera era de buena calidad y, mantenida con recelo como estaba, prácticamente no acusaba el paso de más de cinco décadas. Alfredo observó que su amigo no llevaba paraguas pero no halló evidencia de estragos ocasionados por la lluvia. Ambos se sonrieron y complementaron con saludos exageradamente respetuosos.</p>
+
+<p>─ ¿Cómo le va don?<br />
+─ ¿Qué dice usted?</p>
+
+<p>Palmada en el hombro mediante, procedieron a preparar el campo de batalla. Horacio sacó un
+pañuelo del bolsillo, secó la mesa y el banquito de su lado. Alfredo imitó a su amigo y secó con pañuelo propio su asiento. Horacio abrió el tablero y comenzaron a colocar las fichas. No hubo dudas sobre cómo jugarían, la última partida había sido Horacio quien jugaba con blancas. Por lo tanto, el Equilibrio del Universo dictaba que en esta ocasión era responsabilidad de Alfredo poner en marcha el juego. Ambos conservaron puesto su abrigo y comenzaron con los rituales de acomodar milimétricamente las piezas de un modo innecesario. El ajedrez de parque es un terreno que abunda en superstición. Cada jugador toca varias veces sus dieciséis piezas hasta que están como le gustan y sólo después de eso se considera capaz de dar el visto bueno para que comience la partida. Ya no jugaban por tiempo, pero estaba claro que los abusos del reloj invisible ─ y completamente subjetivo ─ no estaban permitidos. El cronómetro estaba más o menos dictado por un par de intercambios verbales, mitad para charlar con el amigo y mitad para desconcentrar al oponente. Alfredo se lamió el pulgar y le dio una refregada a su peón h2 para terminar de sacarle la mugre. Una vez terminado, miró a su amigo para indicar que estaba listo.</p>
+
+<p>─ Bueno vejete, usted comienza. ─ dijo Horacio</p>
+
+<p>Alfredo sonrió y movió dos casillas para adelante el peón de la dama.</p>
+
+<p>─ Así que d4 eh ¿será un juego especial? ─ dijo Horacio mientras carraspeó para aclararse la garganta ─ Ya nadie juega eso, uno en mil quizás.<br />
+─ El peón de la Dama, mi amigo. ─ dijo Alfredo sonriente y agregó, mientras se acomodaba la visera. ─ El valiente peón de la Dama. Ambos hemos jugado más de mil partidas así que no se haga el sorprendido, sabemos cómo defenderlo&hellip;</p>
+
+<p>Esta vez fue Horacio el que sonrió y movió su peón a e6. Alfredo abrió los ojos y arqueó las cejas para aparentar una falsa sorpresa.</p>
+
+<p>─ El orgullo de Horwitz, ¿nos vamos a Francia o a India después?<br />
+─ Todo depende de lo que juegue el Señor de Blanco&hellip;<br />
+─ El Señor de Blanco juega caballo f3. ─ dijo Alfredo<br />
+─ Entonces nos vamos a Holanda, o cerca, el paisaje es parecido al menos.</p>
+
+<p>Acto seguido, movió su peón hacia la casilla f5 con una sonrisa maliciosa. Le gustaba la defensa holandesa, creía que era superior para negras, claramente no conocía el Gambito de Staunton. Pero su oponente tampoco lo conocía por lo que jugaría caballo f6.</p>
+
+<p>─ A parecido se lo llevaron preso. ─ dijo Alfredo<br />
+─ No me diga, ¿preso por lavado, tráfico o corrupción? ¿Trata? ─ dijo Horacio<br />
+─ Usté hace muchas preguntas don, caballo f6 dice que tiene juego en el medio. ─ dijo Alfredo<br />
+─ Lamento decirle que no lo voy a permitir. ─ dijo Horacio</p>
+
+<p>El juego en el medio es la clave para dominar cualquier partida. Claro está que con tres movidas estándar poco puede determinarse sobre dónde ocurrirá la acción. Horacio jugó caballo f6. Alfredo jugó alfil g6.</p>
+
+<p>─ ¡Oiga! ¿Tan rápido me viene a buscar? Más respeto que soy mayor.<br />
+─ ¿No le decía yo que se me enfría la ensalada? Le voy a ganar rápido y vuelvo para casa. ─ dijo Alfredo<br />
+─ Eso está por verse, no me haga sacar la libretita&hellip; ─ dijo Horacio palmeándose el bolsillo superior izquierdo del piloto.</p>
+
+<p>En la libreta constaba fecha, hora, lugar y resultado de cada partido que habían jugado en los últimos sesenta y tres años. Era un total de dieciocho mil quinientas cuarenta y un partidas ─ sin contar la que estaba aconteciendo ─ en las que Horacio llevaba una ventaja de doscientas treinta y cuatro partidas. Debido a que cada vez jugaban con menor frecuencia y por cómo se habían dado los resultados de los últimos años, es difícil establecer quién llevaba la tendencia ganadora.</p>
+
+<p>─ Otra vez la vieja historia del uno por ciento de diferencia&hellip; ─ dijo Alfredo redondeando lo que en realidad era uno coma veintiséis por ciento.<br />
+─ El uno por ciento de mucha plata es mucha plata&hellip;El uno por ciento de la pirámide ya tiene más que el resto. El mundo es de los excepcionales&hellip;<br />
+─ Por eso ustedes dos están sentados jugando bajo la lluvia al ajedrez para no pensar en la artritis y los millonarios siguen de joda en un yate. ─ interrumpió Hugo, el dueño de un puesto de diarios deportivos de colección.<br />
+─ ¿Cómo le va, Hugo? ¿Qué dice, tanto tiempo? ─ dijo Alfredo<br />
+─ ¡Bien muchachos, no me puedo quejar! ¿Cómo van los negocios Horacio?<br />
+─ Como siempre, tornillos, corpiños, todo viene con medidas y se saca de una caja. ─ dijo Horacio, chiste habitual mediante ─ ¿Qué dice la patrona, no viene hoy?<br />
+─ No, hoy se sentía mal, dice que la humedad le hace pelota los huesos. Para mí se quería quedar en la cama mirando la tele. Con este frío sólo ustedes vienen al parque, no sé a quién le voy a vender algo hoy&hellip;<br />
+─ Siempre hay un roto para un descosido Huguito, no se preocupe que alguien va a aparecer pidiendo el Gráfico del ochenta y seis&hellip; ─ dijo Horacio<br />
+─ Sí, pero ese no lo vendo hasta que venga uno con una oferta en serio. Sigan con lo suyo muchachos que abro y ya los acompaño.</p>
+
+<p>Ambos jugadores volvieron al partido con la vista y a los pocos segundos Horacio movió su alfil para proteger al caballo, jugada natural. El intercambio no se hizo esperar. Alfredo tomó ambas piezas y las quitó del tablero.</p>
+
+<p>─ ¿Qué hace? ─ dijo Horacio<br />
+─ ¿No lo iba a comer? Lo devuelvo entonces&hellip; ─ dijo Alfredo sonriendo mientras volvía a colocar su alfil en f6.<br />
+─ Deje, deje, ahora está el mío ahí ─ Horacio movió su alfil hacia la casilla aún desocupada.</p>
+
+<p>Alfredo volvió a colocar a su pieza afuera del tablero y reposó su mentón sobre ambas manos. La posición era estándar, la habían jugado en otras ocasiones, aunque él no recordaba muchas movidas posteriores ni cómo le habían resultado. La mínima ventaja posicional que tenía no significaba nada pero él tenía la voz cantante y estaba decidido a continuar con la postura agresiva. Así fue que, tras acomodarse la visera, tomó su peón del rey y lo arrastró con vehemencia dos casillas hacia adelante.</p>
+
+<p>─ La posición pide rock and roll&hellip; ─ dijo Horacio mirando a su amigo.<br />
+─ Del bueno y sucio, tome nomás, que para eso estamos acá.</p>
+
+<p>Horacio tomó el peón con el suyo y lo colocó al costado tablero, junto con las demás piezas. Apretó levemente los dientes y frunció el entrecejo tratando de digerir las posibilidades con un tablero abierto. Alfredo capturaría con su caballo, lo que le daba una posición de dominio en el centro del tablero pero también dejaba expuestos los flancos. Horacio necesitaba asegurar el rey primero y luego desarrollar sus piezas para establecer un buen contraataque. O quizás no, quizás podría esperar un poco, buscar que su oponente se precipite y tome su alfil. Quizás ese caballo blanco en e4 era miedoso. Movió entonces b6 para dar a entender que proyectaría su alfil.</p>
+
+<p>Alfredo sintió un leve estremecimiento en el estómago pero su cuerpo seguía diciéndole que debía ir para adelante, volcar más piezas en ataque. Caballo e5. Inadecuado, inexacto, incorrecto. Horacio observó la jugada, bufó con sarcasmo y comenzó la reorganización de piezas con el enroque. Ahora las negras llevaban la voz cantante.</p>
+
+<p>─ Ese rey que se enroca tiene miedo ─ dijo Alfredo y después se humedeció los labios con la lengua nerviosa.<br />
+─ El coronel primero se atrinchera y luego da órdenes, mi amigo. Debería seguir mi ejemplo y no andar todo despatarrado por ahí.</p>
+
+<p>A Alfredo le desagradó aquél comentario. No era la primera vez que Horacio criticaba su modo de vida. Desde que eran pequeños intentaba imponerle que caminara erguido y con el mentón en alto y que pensara en su futuro económico. Que persiguiera un trabajo que le diera placer y la comodidad de tener un buen pasar. Alfredo nunca escuchó. Por eso caminó siempre como un jorobado, se dedicó a trabajar por el dinero inmediato ─ que gastaba inmediatamente ─ y la felicidad la encontró luego de jubilarse, quizás demasiado tarde para disfrutarla en plenitud. De más está decir que la seguridad económica de un jubilado en su condición poco tenía que ver con la noción de tranquilidad que su amigo había querido transmitirle. Lo cierto es que Alfredo tampoco estaba cómodo con su posición, tenía piezas volcadas en la ofensiva pero no tenía una posición sólida después del enroque. Por eso se limitó a contraatacar la crítica con más crítica.</p>
+
+<p>─ Despatarrao es como he vivido siempre. Usté porque tiene esa obsesión del orden con todo en su cajita, acomodado, todo en su librito, anotado, y quiere que todos seamos igual de maníacos. Algunos le darán la razón pero otros&hellip;otros jugamos con estómago.<br />
+─ ¿Con estómago? ─ preguntó Hugo extrañado, mientras levantaba la persiana de su puesto.<br />
+─ El estómago es una parte esencial del Maestro. ─ dijo Alfredo arqueando las cejas de modo sugerente.<br />
+─ Claro que sí mi amigo, lo necesita para nutrirse igual que el resto de nosotros. Ahora deje a Larsen descansar en paz y juegue que se me congelan las nalgas. ─ dijo Horacio que comenzaba a molestarse por la demora y por la cita innecesaria.</p>
+
+<p>Alfredo seguía sintiéndose inseguro en esa posición. No sabía cuántos embates podría aguantar su esquema, necesitaba prepararse para defender. Alfil d3 lo sedujo sin saber bien por qué. Al menos, cuando Horacio llevara su alfil a b7, su caballo estaría protegido. Después de jugar inclinó la cabeza hacia arriba como quien busca una ayuda divina. Hugo se acercó a la mesa al ver la preocupación en el rostro de Alfredo. En silencio, se colocó con ambas manos cruzadas por detrás de la espalda sobre el lateral que no poseía fichas y observó como trabajaban ambas cabezas. También en silencio, ambos contendientes miraban el tablero fijamente, evaluando cómo estaban ubicados sus soldados y cuán sólida era su estrategia. La respiración de cada uno se manifestaba en bocanadas de vapor que se intercambiaban con periodicidad. La posición no requería tal análisis. En ciertos momentos, un jugador de ajedrez decide enroscarse en vano en su propia secuencia de eventos en vez de confiar en su instinto bélico. Horacio trabajó mal y de más. La jugada que había sido presagiada y, que en efecto se jugó, era alfil b7. No era la jugada más acertada, quizás podría haber encontrado una mejor jugada si no se hubiera detenido a pensar tanto. El alfil en b7 avecinaba, empero, un inminente cambio de piezas; por lo que aprovechó para distraer a su contrincante que calculaba sin emitir sonido alguno.</p>
+
+<p>─ ¿Qué piensa Hugo? Yo creo que arruga antes de la jugada veinte. ─ dijo Horacio<br />
+─ A mi no me meta en problemas, los de afuera son de palo.  ─ dijo Hugo<br />
+─ No me va a negar quién lleva la mejor posición, ¿no ve cómo le sale humo de la cabeza?<br />
+─ No&hellip;Para eso se puso la boina, para que no nos demos cuenta. ─ Hugo deslizó un chascarrillo.<br />
+─ No sean pesados que la boina es para proteger la pelada de la lluvia. ─ dijo Alfredo que se estaba comenzando a desconcentrar.</p>
+
+<p>Por dentro sentía una necesidad de encontrar alguna combinación que le cerrara. Necesitaba desarrollar las piezas pero no conseguía ver un horizonte claro. Es común que los jugadores de mediana calidad no logren proyectar jugadas posteriores a la apertura. Comúnmente conocen alguna apertura que les simpatiza y les indica por dónde ir. Pero después de diez o doce movidas, la combinación se acaba y por eso fallan. Cuando realmente es necesario detenerse a considerar las opciones con mayor penitencia, son impacientes para el cálculo. Se esfuerzan poco ─ o menos que lo necesario ─ en evaluar los distintos menjunjes de piezas. Alfredo sabía que tenía una posición comprometida. Lo que no sabía es que la mejor jugada era el enroque. Buscó comprar tiempo con la conversa.</p>
+
+<p>─ ¿Qué jugada le gustaría ver Huguito? Hoy me siento especial. ─ dijo Alfredo<br />
+─ ¿Usté también me quiere meter en el juego? Saben bien que a mí esto me gusta sólo cuando hay sangre. Piensan demasiado, andan haciendo conjeturas espaciales, todavía no hicieron ni diez movidas y están haciendo de cuenta que son Fischer y Spassky.<br />
+─ Dígame Boris entonces. ─ musitó Alfredo.<br />
+─ Por lo menos sabe el lugar que le toca. ─ dijo Horacio.<br />
+─ ¿El de comunista? ─ dijo Alfredo<br />
+─ El de viejo perdedor, vamos mueva algo al menos. ─ dijo Horacio</p>
+
+<p>Hugo echó una carcajada al aire. Horacio lo miró con complicidad. Alfredo jugó dama h5, nuevamente sin mucha idea, mitad para proteger al caballo, pensando que su oponente lo tomaría en la próxima jugada con el alfil y mitad para mantener la actitud amenazante. En efecto, Horacio venía demorando tomar ese caballo desde hacía algunas jugadas y pensaba hacerlo ahora. Sin embargo, algo lo detuvo respecto de la dama en h5. Realmente comenzó a dudar si Alfredo se había equivocado o había algo que él no estaba viendo. Hasta ahora venían jugando de manera relativamente pareja y las imperfecciones habían sido menores de ambos bandos. Pero sacar la dama a h5 sin ningún por qué era extraño. Su cabeza comenzó a trabajar. ¿Qué era lo que estaba buscando con esa dama allí? Su curiosidad pudo más que su capacidad de análisis:</p>
+
+<p>─ ¿Para qué trae a la señora tan lejos, don?<br />
+─ Cuando los caballos están en peligro hay que poner todos los recursos a disposición ─ dijo Alfredo rascándose la nariz ─ ¿O no es cierto, Raúl?</p>
+
+<p>Raúl se encontraba observando la partida a unos metros con su carrito. Se había mantenido en silencio para no estorbar a las máquinas de pensar. Él sabía que su turno para vender café y facturas llegaría pronto. Así, cuando lo llamaron al juego, acudió con excelente predisposición. Sabía de la preferencia que tenía Alfredo por los caballos, más de una vez lo había observado perder una partida por salvar un equino. Por eso dijo:</p>
+
+<p>─ Maestro, lo que usté diga ─ mientras desenroscaba la tapa del termo de café ─ Ya sabe que yo lo sigo a muerte. ¡Mi reino por su caballo!</p>
+
+<p>En una sinfonía sin igual, Raúl volcó el líquido desde el termo hacia tres vasos de poliestireno pequeños, que sostenía con una mano, y lo distribuyó a sus clientes sin derramar ni una sola gota. Cada uno tomó su vaso del montón, liberando la tensión de la mano izquierda del comerciante. Aportaron tres billetes de diez pesos a la bolsa de cuero y, luego de eso, bebieron un primer sorbo para tantear la temperatura. Era un café espantoso ─ realmente de lo peor que puede encontrarse en la ciudad ─ pero nunca decían nada, sólo lo tomaban por compromiso. Ese día era distinto, cualquier líquido que estuviera caliente y dulce sería bienvenido cual pócima de la juventud eterna. Raúl continuó la rutina preguntando:</p>
+
+<p>─ ¿Con qué acompañan al café?<br />
+─ Cañoncitos Raúl. ─ dijo Hugo<br />
+─ ¿Sabe que hoy me falló el muchacho del Dulce de Leche? No va a poder ser. Pero tengo unos sacramentos calentitos que ni le cuento.<br />
+─ Ahora sí, entonces se lo perdonamos, pero que sea la última vez. ─ dijo Alfredo sonriendo
+─ ¿De membrillo o pastelera?<br />
+─ ¿Todavía lo pregunta? De membrillo hombre, ¿qué es esa mentira de la pastelera? ─ dijo Horacio y agregó ─ De membrillo, como Dios manda.</p>
+
+<p>Comentario al margen ─ sería excelente descubrir más sobre cómo manda Dios las cosas y sobre cómo el inconsciente colectivo se apropia de dicho mandato sin haber sido transmitido fielmente por escrito ─ los sacramentos fueron entregados sobre una servilleta, humeando casi tanto como el café. Horacio fue el primero que hundió el diente en aquél manjar grasiento y dulce. Mientras masticaba con sumo placer sintió un vigor especial desde las entrañas hacia arriba. Sentía una pasión desenfrenada por los dulces, vicio que quizás no fuera el mejor amigo de un diabético. Las endorfinas liberadas ─ o quizás la premonición de un pico de glucemia ─ le nublaron momentáneamente la vista. A pesar de eso, Horacio encontró lo que estaba buscando con tanto ahínco. La posición de la dama en h5 podía ser combinada con caballo toma alfil jaque, con la obligada captura del caballo y posterior mate. Horacio sufrió de un miedo paralizante mezclado con un subidón por haber descubierto la trama oculta que traía la dama. El problema radicaba en cómo detener la jugada. Para eso, existían alternativas, pero realmente pensaba en formas de proteger a su alfil.</p>
+
+<p>El tiempo pasaba y no encontraba forma de remediar el ataque inminente. Ninguno de los presentes se manifestó, ni siquiera su oponente pidió que jugara. Tan sólo esperaban en silencio, padeciendo el frío. Horacio se ofuscó tanto que olvidó completamente su jugada inicial. Pensó entonces que necesitaría la ayuda de su propia dama para resolver el problema. Si Alfredo efectivamente comía su pieza, podría recuperarla con el peón y la dama en e7 defendería el ataque conjunto de las blancas. La única jugada sensata ─ lo que cualquier computadora hubiera ejecutado hacía varios turnos e incluso en el actual ─ era alfil de f6 toma caballo en e5 y no se jugaría nunca.</p>
+
+<p>Alfredo se sorprendió. Horacio no había tomado su caballo. Su estómago comenzó a gruñir. No era hambre, de hecho estaba saboreando el membrillo que le había quedado en la comisura de su boca. Era un gruñido distinto, un gruñido insistente que lo obligaba a volcarse hacia adelante para observar el tablero con noventa ojos ─ licencia poética mediante. Y entonces lo vio. Su alfil en d3, su caballo y el mate. No estaba seguro, estaba lleno de incertezas pero valía la pena calcularlo. Su oponente había cometido un error garrafal. Un error tan grave puede ser de esos miles que se cometen en silencio y pasan desapercibidos o de aquellos que el oponente logra descubrir y se convierten en derrota. Esta vez era la segunda opción. Un humano difícilmente tenga la certeza de resolver todas las combinaciones en su mente. Se necesita una dosis enorme de convicción, intuición y la habilidad de tomar riesgos en situaciones adversas. Pero, esta vez, Alfredo sí había calculado.</p>
+
+<p>─ No me va a creer si se lo digo. ─ dijo Alfredo<br />
+─ ¿Tuvo una erección?</p>
+
+<p>Hugo estalló en una carcajada contenida y casi se atraganta con el café.</p>
+
+<p>─ Algo así&hellip; ─ dijo Alfredo con tono calmo ─ ¿se acuerda cuando yo le decía que envejecer es caminar hacia adelante pero sólo para peor?<br />
+─ Si, y ya le dije que esa es una cháchara de viejo mediocre. ─ dijo Horacio<br />
+─ Pues hoy le voy a mostrar que no sólo es cierto sino que también le va a pasar a usté ─ dijo Alfredo con cierta carraspera, que se mejoró después de forzar la tos, y luego continuó con voz calma y clara ─ Si le digo zugzwang no me va a creer&hellip;mejor tengo que jugarlo.</p>
+
+<p>Ambos espectadores realizaron exclamaciones de asombro. Con una mano temblorosa, Alfredo tomó el peón en h7 y lo quitó del tablero, colocándolo a la izquierda del mismo, en solitario. Tomó su dama, la llevó hasta esa posición y anunció en voz clara pero suave.</p>
+
+<p>─ Jaque.</p>
+
+<p>La cara de Horacio se transfiguró. Un sacrificio de dama no era usual viniendo de su amigo. Un miedo caluroso le brotó desde los tobillos hacia la punta del cabello gris. Se incorporó furioso. Le salía humo por los poros aún dilatados por la afeitada. Hizo los cálculos, repasó el tablero. No podía ser cierto, su amigo tenía que haber hecho los cálculos equivocados. Ahora podía predecir la obligada pérdida de su alfil y el posible mate si movía su rey hacia atrás pero veía escapatoria hacia adelante. De cualquier modo estaba obligado a comer la dama.</p>
+
+<p>─ Así que no me cree&hellip; ─ dijo Alfredo, tomando el alfil de b6 y sustituyéndolo con su caballo. ─ Jaque.<br />
+─ Esa sí la veía, mi amigo, hermoso jaque doble pero&hellip; ¿y ahora? ─ dijo Horacio moviendo su rey hacia adelante.<br />
+─ Ahora nos vamos de paseo ─ dijo mientras colocaba su caballo de la columna E en g4  y agregó ─ En un auto feo, don. Jaque.</p>
+
+<p>Horacio dejó caer su mentón de la sorpresa. Su rey no tenía alternativas. La única ─ g5 ─ lo conducía aún más lejos, hacia la intemperie. Alfredo conservaba la tranquilidad analítica con la que había evaluado todas las probabilidades. Jugó h4 ─ un jaque que no está en los planes de la computadora, que pugna por f4+ para llevar al que quizás sea el segundo mate más lindo de la historia ─ y pronunció ladeando su cabeza para la derecha:</p>
+
+<p>─ Jaque</p>
+
+<p>Horacio volvió a mover su rey a la única casilla disponible, f4. La amenaza para el rey negro no cesaba, g3 jaque. Único sitio, f3. Horacio transpiraba desesperado. Continuaba jugando con los ojos abiertos de par en par y la cara completamente enrojecida por el pudor. Alfredo le sonreía agradecido por la gentileza de permitir que su obra de arte se perpetuara. Movió alfil e2 jaque, secuencia que no era la más corta pero sin duda la más bonita. Rey g2 le sucedió. Alfredo movió torre h2 jaque, a lo que Horacio sólo pudo responder rey g1. Ambos espectadores sonrieron extasiados. Alfredo movió su rey, luego su torre y se enjugó las lágrimas provocadas por la belleza del enroque que le otorgó la partida.</p>
+
+<p>Alfredo estrechó la mano de su oponente, quien había permanecido de pie durante toda la secuencia. Tras recibir una palmada de Raúl en el hombro, complementó con un guiño de ojo y se dirigió hacia Hugo en tono suave:</p>
+
+<p>─ Mejor decime Bobby&hellip;</p>
+
+<p>Sin más, se dio media vuelta y se retiró caminando despacio por el mismo sendero por el que había llegado desde su casa. Su adversario continuó de pie, mirando incrédulo el tablero, atolondrado por lo que acababa de ocurrir, estupefacto. Ambos espectadores se retiraron cautelosos hacia sus tareas sin emitir palabra, buscando dejar aire para facilitar la evacuación de la tempestad que se gestaba dentro del piloto gris. Lo único que Horacio pudo hacer fue observar marchar su rey hacia la muerte, en la otra punta del tablero, totalmente desprotegido, como si su ejército lo hubiera abandonado a su suerte. Infame historia la de la realeza ─ también la de los reyes de ajedrez ─ que, abandonados por sus súbditos, no son más que un simple mortal, esquivando charcos y trampas mortales, de a un paso a la vez, sin más poder que el de una corona de cotillón y con la única certeza de que sólo con su muerte acaba el juego.</p>
+
+<hr />
+
+<p>Información extra para el lector curioso.</p>
+
+<p>Esta partida se jugó en Inglaterra en 1912 (Edward Lasker vs George Alan Thomas). Aquí abajo se muestra el detalle de todas las movidas.</p>
+
+<pre><code>1. d4 e6 2. Nf3 f5 3. Nc3 Nf6 4. Bg5 Be7 5. Bxf6 Bxf6 6. e4fxe4 7. Nxe4 b6 8. Ne5 O-O 9. Bd3 Bb7 10. Qh5 Qe7 11. Qxh7+Kxh7 12. Nxf6+ Kh6 13. Neg4+ Kg5 14. h4+ Kf4 15. g3+ Kf316. Be2+ Kg2 17. Rh2+ Kg1 18. Kd2#
+</code></pre>
+
+<p>Los links pueden ser útiles para seguir y simular el juego (en especial, la jugada clave que no se realizó).</p>
+
+<ul>
+<li><a href="http://www.chessgames.com/perl/chessgame?gid=1259009">http://www.chessgames.com/perl/chessgame?gid=1259009</a></li>
+<li><a href="http://en.lichess.org/">http://en.lichess.org/</a> (Elegir <em>turn on local computer</em> para ver las sugerencias del ordenador)</li>
+</ul>
+
+<hr />
+
+  </div>
+  <hr>
+
+  <div id=links>
+    
+      <a class="basic-alignment left" href="/post/el-numero-favorito/">&laquo; El número favorito</a>
+    
+    
+  </div>
+</section>
+
+  
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-164651073-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+</body>
+</html>
+
+
