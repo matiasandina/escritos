@@ -1,5 +1,5 @@
 ---
-title: El lado vacio de la cama
+title: El lado vacío de la cama
 author: Matias Andina
 date: 2020-07-23
 tags: ["ficción"]
