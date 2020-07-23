@@ -1,0 +1,34 @@
+---
+title: El lado vacio de la cama
+author: Matias Andina
+date: 2020-07-23
+tags: ["ficción"]
+---
+
+— Me gusta que cambiemos de lado en la cama. — dijo Silvia.
+
+Roberto no dijo nada. Se metió en la cama desde el lado vacío, se recostó mirando hacia el techo y, tras eternos tres segundos de expresión indescifrable, inclinó el rostro de manera muy leve, pero suficiente para que hubiera contacto visual.
+
+Recién había terminado de bañarse. Se había afeitado, su piel olía a espuma. A Silvia le gustaban los hombres con barba, pero Roberto sólo podía satisfacerla durante las breves vacaciones anuales. El jefe de Roberto era un hombre serio, y todos los hombres serios que trabajan para él se afeitan religiosamente. Silvia diría que era un idiota, y que muchos de los hombres que trabajan para él también lo eran. Con barba o no.
+
+La mirada de Roberto le indicó que él no tenía la más pálida idea de qué significaba su comentario. Como siempre, la ingenuidad pretendida o cierta lo amparaba de cualquier furcio. Roberto pertenecía al grupo de humanos que cree en asegurarse. La lógica que guía la decisión de contratar un seguro es la de comprar tranquilidad en cuotas, por si acaso algún día ocurre el peor escenario. Las inmensas arcas de las empresas que venden seguros indican que, o bien pagan de menos cuando efectivamente les toca o cobran de más en cada cuota, o las dos. La ingenuidad de Roberto era un seguro contra el divorcio.
+
+Silvia había crecido en una casa de intelectuales, donde todos tenían opiniones formadas y se encargaban de justificarlas hasta el hartazgo en cada oportunidad. En la casa de Silvia se curaba el Cáncer unas dos veces al mes. La Paz Mundial era un juego de niños. Cada crisis de combustible se resolvía en lo que le tomaba al hermano menor atarse los cordones. Cada punto de caída de la bolsa venía acompañado de las recetas para salir a comprar y el tiempo que había que esperar para el rebote, para salir a vender.
+
+El día exacto en el que Silvia cumplió dieciocho años, se fue de esa casa. No podía tolerar más el encumbramiento, el continuo recitar de poemas, la falta de televisión berreta. Su plan involucraba necesariamente a otro ser humano, una razón reprobable, pero suficientemente grande como para salir disparada sin causar revuelta mayor. Silvia no quería un marido, en especial un marido que tuviera opiniones. Silvia quería silencio, quería observar como pasaba el tiempo a través de la ventana sin que alguien trate de explicarle por qué el cielo es celeste. Se casaron un 20 de Mayo.
+
+Los primeros años fueron sencillos. Silvia tuvo casi todo el silencio y los libros de segunda mano que quería. Leía ficción en cantidades industriales. Roberto se creía el hombre de la casa, el proveedor. Silvia tenía las prioridades claras y todo lo que necesitaba en este momento lo tenía entre sus manos. Cuando se antojara de tener hijos, así lo haría y se encargaría de ellos con la misma pasión que le dedicaba a sus libros. Mientras tanto, no le venía mal tomar un curso acelerado en todas aquellas cosas que eran consideradas de poca monta en su antiguo hogar. Y leer, siempre leer.
+
+Silvia estudió en detalle la plomería de la casa, la forma en la que se había hecho el cableado por las paredes, las medidas de seguridad que no se habían tomado. Por diversión, había desarmado y vuelto a armar la heladera y la estufa. Ambas en el mismo día, ambas quedaron mejor que como estaban cuando se mudaron juntos. Durante el segundo año se obsesionó con un ambiente de la casa por estación. En primavera, dio vuelta la cocina entera y la puso como nueva. En verano le tocó al cuarto, donde hizo refacciones varias y probó distintas formas de orientar la cama. Lo que más le gustó fueron las dos mesas de luz con madera de pino que pintó de blanco. En otoño decidió que las alfombras del comedor eran lo peor de la casa. Las quitó, y pulió y plastificó el piso de madera. En Invierno llegó el momento del baño, que había quedado relegado y fue renovado por completo.
+
+Cada unos dos años vuelve a transitar ese ciclo obsesivo en la que reinventa casi por completo la casa. Lo hace sin darle más que unos tres segundos de consideración pero sin gastar prácticamente un centavo más que los materiales mínimos. Aunque Silvia nunca supo por qué, Roberto siempre aprueba estas fases de transición. En realidad esto no es lo único que desconoce de su marido, Silvia nunca supo por qué Roberto hace lo que hace. A veces se pregunta de qué se estará escapando él, pero luego se le tensa la columna y el nudo en la garganta le reaparece. Es una señal premonitoria, un sentimiento que Silvia intenta evitar tanto o más que una Navidad en casa de sus padres. Ese sentimiento estaba empezando a cristalizar nuevamente con cada segundo que Roberto la miraba sin decir nada.
+
+Roberto seguía sin expresarse. Silvia pensó que quizás no le quedaba ni una cosa linda que decirle. Después de todo este tiempo, Silvia hubiera aceptado cualquier halago. Aunque fuera mentira, aunque fuera algo con cero mérito y poca imaginación. Silvia incluso hubiera aceptado una explicación sobre los beneficios de distribuir el peso de ambos de manera equitativa en el colchón, para alargar su vida útil. Pero nunca iba a ocurrir, ella ya conocía ese silencio y esa mirada. La premonición nunca se equivoca.
+
+Silvia se sintió tele-transportada al hospital, a ese pasillo en la sala de espera, donde durmió varias noches esperando que le den noticias sobre la recuperación de su bebé. Roberto no había mostrado iniciativa ni para traerle un café. Estaba blanco como un papel, atónito, pasivo, completamente superado por la circunstancia. Todavía tenía pelo suficiente como para taparse la calva que empezaba a hacerse inevitable donde termina la frente. Pero el chanfle hacia el costado con gomina le daba un aspecto pusilánime.
+
+Con esa misma mirada le dijo o, en realidad no le dijo, que su bebé se había ido, que los médicos habían hecho todo lo posible y que habían sido victimas del Destino. Nadie les había avisado a tiempo. Ellos no eran responsables. Si ellos no eran responsables, no podían cargar con culpas, el refugio en la ingenuidad.
+
+— La mayoría de las parejas tienen un lado fijo pero nosotros no, me gusta. — dijo Silvia y sonrió.
+
+Luego apagó la luz, señal clara de que la conversación ya no tenía importancia. Roberto lo sintió como un alivio. Lo que Silvia no le dijo a su marido era que, a ciencia cierta, no sabía si la mayoría de las parejas tenían lado fijo y que ese comentario tenía como principal objetivo comunicarse a sí misma, en voz alta, que había una cosa que le gustaba de ese matrimonio. Necesitaba una cosa, alguna, al menos una. Saber eso le daba tranquilidad suficiente para poder dormir.

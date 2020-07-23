@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="referrer" content="no-referrer">
+    
+
+    
+      <link href='https://fonts.googleapis.com/css?family=Open+Sans:400|Old+Standard+TT:400' rel='stylesheet' type='text/css'>
+    
+
+    <link rel="icon" type="image/png" href="/favicon_16x16.png" sizes="16x16">
+    <link rel="icon" type="image/png" href="/favicon_32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="/favicon_128x128.png" sizes="128x128">
+
+    <title>
+      
+      
+         El lado vacio de la cama 
+      
+    </title>
+    <link rel="canonical" href="/post/el-lado-vac%C3%ADo-de-la-cama/">
+
+    <style>
+  * {
+    border:0;
+    font:inherit;
+    font-size:100%;
+    vertical-align:baseline;
+    margin:0;
+    padding:0;
+    color: black;
+    text-decoration-skip: ink;
+  }
+
+  body {
+    font-family:'Open Sans', 'Myriad Pro', Myriad, sans-serif;
+    font-size:17px;
+    line-height:160%;
+    color:#1d1313;
+    max-width:700px;
+    margin:auto;
+  }
+
+  p {
+    margin: 20px 0;
+  }
+
+  a img {
+    border:none;
+  }
+
+  img {
+    margin: 10px auto 10px auto;
+    max-width: 100%;
+    display: block;
+  }
+
+  .left-justify {
+    float: left;
+  }
+
+  .right-justify {
+    float:right;
+  }
+
+  pre, code {
+    font: 12px Consolas, "Liberation Mono", Menlo, Courier, monospace;
+    background-color: #f7f7f7;
+  }
+
+  code {
+    font-size: 12px;
+    padding: 4px;
+  }
+
+  pre {
+    margin-top: 0;
+    margin-bottom: 16px;
+    word-wrap: normal;
+    padding: 16px;
+    overflow: auto;
+    font-size: 85%;
+    line-height: 1.45;
+  }
+
+  pre>code {
+    padding: 0;
+    margin: 0;
+    font-size: 100%;
+    word-break: normal;
+    white-space: pre;
+    background: transparent;
+    border: 0;
+  }
+
+  pre code {
+    display: inline;
+    max-width: auto;
+    padding: 0;
+    margin: 0;
+    overflow: visible;
+    line-height: inherit;
+    word-wrap: normal;
+    background-color: transparent;
+    border: 0;
+  }
+
+  pre code::before,
+  pre code::after {
+    content: normal;
+  }
+
+  em,q,em,dfn {
+    font-style:italic;
+  }
+
+  .sans,html .gist .gist-file .gist-meta {
+    font-family:"Open Sans","Myriad Pro",Myriad,sans-serif;
+  }
+
+  .mono,pre,code,tt,p code,li code {
+    font-family:Menlo,Monaco,"Andale Mono","lucida console","Courier New",monospace;
+  }
+
+  .heading,.serif,h1,h2,h3 {
+    font-family:"Old Standard TT",serif;
+  }
+
+  strong {
+    font-weight:600;
+  }
+
+  q:before {
+    content:"\201C";
+  }
+
+  q:after {
+    content:"\201D";
+  }
+
+  del,s {
+    text-decoration:line-through;
+  }
+
+  blockquote {
+    font-family:"Old Standard TT",serif;
+    text-align:center;
+    padding:50px;
+  }
+
+  blockquote p {
+    display:inline-block;
+    font-style:italic;
+  }
+
+  blockquote:before,blockquote:after {
+    font-family:"Old Standard TT",serif;
+    content:'\201C';
+    font-size:35px;
+    color:#403c3b;
+  }
+
+  blockquote:after {
+    content:'\201D';
+  }
+
+  hr {
+    width:40%;
+    height: 1px;
+    background:#403c3b;
+    margin: 25px auto;
+  }
+
+  h1 {
+    font-size:35px;
+  }
+
+  h2 {
+    font-size:28px;
+  }
+
+  h3 {
+    font-size:22px;
+    margin-top:18px;
+  }
+
+  h1 a,h2 a,h3 a {
+    text-decoration:none;
+  }
+
+  h1,h2 {
+    margin-top:28px;
+  }
+
+  #sub-header, time {
+    color:#403c3b;
+    font-size:13px;
+  }
+
+  #sub-header {
+    margin: 0 4px;
+  }
+
+  #nav h1 a {
+    font-size:35px;
+    color:#1d1313;
+    line-height:120%;
+  }
+
+  .posts_listing a,#nav a {
+    text-decoration: none;
+  }
+
+  li {
+    margin-left: 20px;
+  }
+
+  ul li {
+    margin-left: 5px;
+  }
+
+  ul li {
+    list-style-type: none;
+  }
+  ul li:before {
+    content:"\00BB \0020";
+  }
+
+  #nav ul li:before, .posts_listing li:before {
+    content:'';
+    margin-right:0;
+  }
+
+  #content {
+    text-align:left;
+    width:100%;
+    font-size:15px;
+    padding:60px 0 80px;
+  }
+
+  #content h1,#content h2 {
+    margin-bottom:5px;
+  }
+
+  #content h2 {
+    font-size:25px;
+  }
+
+  #content .entry-content {
+    margin-top:15px;
+  }
+
+  #content time {
+    margin-left:3px;
+  }
+
+  #content h1 {
+    font-size:30px;
+  }
+
+  .highlight {
+    margin: 10px 0;
+  }
+
+  .posts_listing {
+    margin:0 0 50px;
+  }
+
+  .posts_listing li {
+    margin:0 0 25px 15px;
+  }
+
+  .posts_listing li a:hover,#nav a:hover {
+    text-decoration: underline;
+  }
+
+  #nav {
+    text-align:center;
+    position:static;
+    margin-top:60px;
+  }
+
+  #nav ul {
+    display: table;
+    margin: 8px auto 0 auto;
+  }
+
+  #nav li {
+    list-style-type:none;
+    display:table-cell;
+    font-size:15px;
+    padding: 0 20px;
+  }
+
+  #links {
+    margin: 50px 0 0 0;
+  }
+
+  #links :nth-child(2) {
+    float:right;
+  }
+
+  #not-found {
+    text-align: center;
+  }
+
+  #not-found a {
+    font-family:"Old Standard TT",serif;
+    font-size: 200px;
+    text-decoration: none;
+    display: inline-block;
+    padding-top: 225px;
+  }
+
+  @media (max-width: 750px) {
+    body {
+      padding-left:20px;
+      padding-right:20px;
+    }
+
+    #nav h1 a {
+      font-size:28px;
+    }
+
+    #nav li {
+      font-size:13px;
+      padding: 0 15px;
+    }
+
+    #content {
+      margin-top:0;
+      padding-top:50px;
+      font-size:14px;
+    }
+
+    #content h1 {
+      font-size:25px;
+    }
+
+    #content h2 {
+      font-size:22px;
+    }
+
+    .posts_listing li div {
+      font-size:12px;
+    }
+  }
+
+  @media (max-width: 400px) {
+    body {
+      padding-left:20px;
+      padding-right:20px;
+    }
+
+    #nav h1 a {
+      font-size:22px;
+    }
+
+    #nav li {
+      font-size:12px;
+      padding: 0 10px;
+    }
+
+    #content {
+      margin-top:0;
+      padding-top:20px;
+      font-size:12px;
+    }
+
+    #content h1 {
+      font-size:20px;
+    }
+
+    #content h2 {
+      font-size:18px;
+    }
+
+    .posts_listing li div{
+      font-size:12px;
+    }
+  }
+
+  @media (prefers-color-scheme: dark) {
+    *, #nav h1 a {
+      color: #FDFDFD;
+    }
+
+    body {
+      background: #121212;
+    }
+
+    pre, code {
+      background-color: #262626;
+    }
+
+    #sub-header, time {
+      color: #BABABA;
+    }
+
+    hr {
+      background: #EBEBEB;
+    }
+  }
+</style>
+
+
+    
+  </head>
+
+  <body>
+    <section id=nav>
+      <h1><a href="/">Matias Andina</a></h1>
+      <ul>
+        
+          <li><a href="https://matiasandina.netlify.com/about/">About</a></li>
+        
+          <li><a href="/contribute">Contribuir</a></li>
+        
+          <li><a href="/contact">Contacto</a></li>
+        
+      </ul>
+    </section>
+
+
+<section id=content>
+  <h1> El lado vacio de la cama </h1>
+
+  
+    <div id=sub-header>
+      July 2020 · 6 minute read
+    </div>
+  
+  
+
+
+  <ul>
+    
+      <li>
+          <a href="/tags/ficci%C3%B3n/">ficci%C3%B3n</a>
+        </li></ul>
+
+  <hr>
+
+  <div class="entry-content">
+    <p>— Me gusta que cambiemos de lado en la cama. — dijo Silvia.</p>
+
+<p>Roberto no dijo nada. Se metió en la cama desde el lado vacío, se recostó mirando hacia el techo y, tras eternos tres segundos de expresión indescifrable, inclinó el rostro de manera muy leve, pero suficiente para que hubiera contacto visual.</p>
+
+<p>Recién había terminado de bañarse. Se había afeitado, su piel olía a espuma. A Silvia le gustaban los hombres con barba, pero Roberto sólo podía satisfacerla durante las breves vacaciones anuales. El jefe de Roberto era un hombre serio, y todos los hombres serios que trabajan para él se afeitan religiosamente. Silvia diría que era un idiota, y que muchos de los hombres que trabajan para él también lo eran. Con barba o no.</p>
+
+<p>La mirada de Roberto le indicó que él no tenía la más pálida idea de qué significaba su comentario. Como siempre, la ingenuidad pretendida o cierta lo amparaba de cualquier furcio. Roberto pertenecía al grupo de humanos que cree en asegurarse. La lógica que guía la decisión de contratar un seguro es la de comprar tranquilidad en cuotas, por si acaso algún día ocurre el peor escenario. Las inmensas arcas de las empresas que venden seguros indican que, o bien pagan de menos cuando efectivamente les toca o cobran de más en cada cuota, o las dos. La ingenuidad de Roberto era un seguro contra el divorcio.</p>
+
+<p>Silvia había crecido en una casa de intelectuales, donde todos tenían opiniones formadas y se encargaban de justificarlas hasta el hartazgo en cada oportunidad. En la casa de Silvia se curaba el Cáncer unas dos veces al mes. La Paz Mundial era un juego de niños. Cada crisis de combustible se resolvía en lo que le tomaba al hermano menor atarse los cordones. Cada punto de caída de la bolsa venía acompañado de las recetas para salir a comprar y el tiempo que había que esperar para el rebote, para salir a vender.</p>
+
+<p>El día exacto en el que Silvia cumplió dieciocho años, se fue de esa casa. No podía tolerar más el encumbramiento, el continuo recitar de poemas, la falta de televisión berreta. Su plan involucraba necesariamente a otro ser humano, una razón reprobable, pero suficientemente grande como para salir disparada sin causar revuelta mayor. Silvia no quería un marido, en especial un marido que tuviera opiniones. Silvia quería silencio, quería observar como pasaba el tiempo a través de la ventana sin que alguien trate de explicarle por qué el cielo es celeste. Se casaron un 20 de Mayo.</p>
+
+<p>Los primeros años fueron sencillos. Silvia tuvo casi todo el silencio y los libros de segunda mano que quería. Leía ficción en cantidades industriales. Roberto se creía el hombre de la casa, el proveedor. Silvia tenía las prioridades claras y todo lo que necesitaba en este momento lo tenía entre sus manos. Cuando se antojara de tener hijos, así lo haría y se encargaría de ellos con la misma pasión que le dedicaba a sus libros. Mientras tanto, no le venía mal tomar un curso acelerado en todas aquellas cosas que eran consideradas de poca monta en su antiguo hogar. Y leer, siempre leer.</p>
+
+<p>Silvia estudió en detalle la plomería de la casa, la forma en la que se había hecho el cableado por las paredes, las medidas de seguridad que no se habían tomado. Por diversión, había desarmado y vuelto a armar la heladera y la estufa. Ambas en el mismo día, ambas quedaron mejor que como estaban cuando se mudaron juntos. Durante el segundo año se obsesionó con un ambiente de la casa por estación. En primavera, dio vuelta la cocina entera y la puso como nueva. En verano le tocó al cuarto, donde hizo refacciones varias y probó distintas formas de orientar la cama. Lo que más le gustó fueron las dos mesas de luz con madera de pino que pintó de blanco. En otoño decidió que las alfombras del comedor eran lo peor de la casa. Las quitó, y pulió y plastificó el piso de madera. En Invierno llegó el momento del baño, que había quedado relegado y fue renovado por completo.</p>
+
+<p>Cada unos dos años vuelve a transitar ese ciclo obsesivo en la que reinventa casi por completo la casa. Lo hace sin darle más que unos tres segundos de consideración pero sin gastar prácticamente un centavo más que los materiales mínimos. Aunque Silvia nunca supo por qué, Roberto siempre aprueba estas fases de transición. En realidad esto no es lo único que desconoce de su marido, Silvia nunca supo por qué Roberto hace lo que hace. A veces se pregunta de qué se estará escapando él, pero luego se le tensa la columna y el nudo en la garganta le reaparece. Es una señal premonitoria, un sentimiento que Silvia intenta evitar tanto o más que una Navidad en casa de sus padres. Ese sentimiento estaba empezando a cristalizar nuevamente con cada segundo que Roberto la miraba sin decir nada.</p>
+
+<p>Roberto seguía sin expresarse. Silvia pensó que quizás no le quedaba ni una cosa linda que decirle. Después de todo este tiempo, Silvia hubiera aceptado cualquier halago. Aunque fuera mentira, aunque fuera algo con cero mérito y poca imaginación. Silvia incluso hubiera aceptado una explicación sobre los beneficios de distribuir el peso de ambos de manera equitativa en el colchón, para alargar su vida útil. Pero nunca iba a ocurrir, ella ya conocía ese silencio y esa mirada. La premonición nunca se equivoca.</p>
+
+<p>Silvia se sintió tele-transportada al hospital, a ese pasillo en la sala de espera, donde durmió varias noches esperando que le den noticias sobre la recuperación de su bebé. Roberto no había mostrado iniciativa ni para traerle un café. Estaba blanco como un papel, atónito, pasivo, completamente superado por la circunstancia. Todavía tenía pelo suficiente como para taparse la calva que empezaba a hacerse inevitable donde termina la frente. Pero el chanfle hacia el costado con gomina le daba un aspecto pusilánime.</p>
+
+<p>Con esa misma mirada le dijo o, en realidad no le dijo, que su bebé se había ido, que los médicos habían hecho todo lo posible y que habían sido victimas del Destino. Nadie les había avisado a tiempo. Ellos no eran responsables. Si ellos no eran responsables, no podían cargar con culpas, el refugio en la ingenuidad.</p>
+
+<p>— La mayoría de las parejas tienen un lado fijo pero nosotros no, me gusta. — dijo Silvia y sonrió.</p>
+
+<p>Luego apagó la luz, señal clara de que la conversación ya no tenía importancia. Roberto lo sintió como un alivio. Lo que Silvia no le dijo a su marido era que, a ciencia cierta, no sabía si la mayoría de las parejas tenían lado fijo y que ese comentario tenía como principal objetivo comunicarse a sí misma, en voz alta, que había una cosa que le gustaba de ese matrimonio. Necesitaba una cosa, alguna, al menos una. Saber eso le daba tranquilidad suficiente para poder dormir.</p>
+
+  </div>
+  <hr>
+
+  <div id=links>
+    
+      <a class="basic-alignment left" href="/post/el-ritual/">&laquo; El ritual</a>
+    
+    
+  </div>
+</section>
+
+  
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-164651073-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+</body>
+</html>
+
+
