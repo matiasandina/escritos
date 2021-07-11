@@ -7,10 +7,15 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>es</language>
     <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
-    <lastBuildDate>Thu, 23 Jul 2020 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
-    
+    <lastBuildDate>Sun, 11 Jul 2021 00:00:00 +0000</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>La gente se suicida en los hoteles</title>
+      <link>/post/la-gente-se-suicida-en-los-hoteles/</link>
+      <pubDate>Sun, 11 Jul 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/post/la-gente-se-suicida-en-los-hoteles/</guid>
+      <description>Dentro de las miles de cosas que Simona había visto en los hoteles, el suicidio era una recurrente y no perdía lo excitante. La gente viene a los hoteles con muchos propósitos. Vienen a tener sexo del bueno, del malo, del salvaje, del rutinario, del ebrio o desprolijo. Los hombres de mal andar vienen a escapar de la ley, las mujeres golpeadas vienen a escaparse de los golpeadores. Los escritores vienen a encerrarse en silencio, entre paredes privadas, donde puedan entregarse libres a su arte.</description>
+    </item>
     
     <item>
       <title>El lado vacío de la cama</title>
@@ -176,8 +181,8 @@ Mil uno&amp;hellip;Mil dos&amp;hellip;Mil tres&amp;hellip;El hombre seguía cont
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/contact/</guid>
-      <description> Contacto Frecuento estos sitios:
- &amp;nbsp;  &amp;nbsp;&amp;nbsp;  &amp;nbsp;&amp;nbsp;  &amp;nbsp;&amp;nbsp;  &amp;nbsp;&amp;nbsp;  &amp;nbsp;  </description>
+      <description>Contacto Frecuento estos sitios:
+ </description>
     </item>
     
     <item>
@@ -186,11 +191,8 @@ Mil uno&amp;hellip;Mil dos&amp;hellip;Mil tres&amp;hellip;El hombre seguía cont
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/contribute/</guid>
-      <description> Contribute  Escribo ficción y no ficcion.
-Escribo open-source software.
-Creo arte generativa.
-Todo lo que produzco está disponible gratis en distintos medios. Si te gusta lo que hago, y me quieres ayudar a seguir creando, podes contribuir usando los siguientes links. 
- Patreon  Become a Patron!       Paypal      </description>
+      <description>Contribute Todo lo que produzco está disponible gratis en distintos medios. Si te gusta lo que hago, y me quieres ayudar a seguir creando, podes contribuir usando los siguientes links.
+  </description>
     </item>
     
   </channel>
